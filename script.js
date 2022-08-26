@@ -1,5 +1,11 @@
 
 modes = document.getElementById("mode_toggle");
+// document.getElementsByClassName("load-wrapper").classList.add("hidden");
+// $('.load-wrapper').classList.add("hidden");
+
+// load animation
+
+// load animation end
 
 modes.addEventListener('click', function(){
     if (document.documentElement.classList.contains('dark'))
