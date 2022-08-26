@@ -6,24 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./assets/icons/mg_light.png">
+    <link rel="icon" href="./assets/icons/logo/mg_light.png">
     <script src="jquery-1.6.1.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>portfolio</title>
 </head>
 
-<body class="font-sans-['Poppins'] relative">
+<body class="font-sans-['Poppins'] relative overflow-x-hidden">
     <!-- loading wrapper -->
-    <div class="load-wrapper animate-pulse">
+    <!-- <div class="load-wrapper animate-pulse ">
         <div class="ok "></div>
-    </div>
+    </div> -->
     <!-- main container has everything beginning -->
-    <div class="static w-screen bg-gray-50 dark:bg-back h-full ">
+    <div class="static w-screen  bg-gray-50 dark:bg-back h-full ">
         <!-- nav container beginning -->
-        <div class="  h-screen w-screen  relative z-50 overflow-hidden">
-            <div class="w-300 h-200 rotate-trotate bg-sidetriangle absolute -top-10 -right-1/2 -z-10 rounded"></div>
-            <div class="mx-14 z-50">
-                <header class="h-32 flex justify-between items-center" bg-gray-500">
+        <div class="  h-screen w-screen  relative z-50 overflow-x-hidden ">
+            <div class="w-300 h-200 rotate-trotate bg-sidetriangle absolute -top-10 -right-1/2 -z-50 rounded"></div>
+            <div class="px-14 z-40 h-auto w-full">
+                <header class="h-36 flex justify-between items-center" bg-gray-500">
                     <div>
                         <div>
                             <a href="/">
@@ -35,19 +35,19 @@
                         <ul class=" invert   text-xs flex  uppercase items-center justify-between">
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
                                     href="#home"
-                                    class="invert dark:invert-0 z-50 px-8 font-light hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">home</a>
+                                    class="invert dark:invert-0 z-50 px-8 font-normal hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">home</a>
                             </li>
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
                                     href="#about"
-                                    class="px-8 font-light hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">about</a>
+                                    class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">about</a>
                             </li>
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
                                     href="#contact"
-                                    class="px-8 font-light hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">contact
+                                    class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">contact
                                     me</a></li>
                             <li class="pl-10">
                                 <div id="mode_toggle"
-                                    class="invert bg-gray-300 rounded-full p-2 w-10 select-none cursor-move transition-rotate hover:-rotate-45 duration-150 ">
+                                    class="invert bg-gray-100 rounded-full p-2 w-10 select-none cursor-move transition-rotate hover:-rotate-45 duration-500  ease-in-out :animate-ping">
                                     <img src="./assets/icons/modes/moon_dark.png" alt="modes">
                                 </div>
                             </li>
@@ -57,12 +57,42 @@
             </div>
             <!-- ending of nav container -->
             <!-- begin of  hero container -->
-            <div>
-                <h1 class="text-primary dark:text-white font-bold">Hi! <br> I am Manoj</h1>
+            <div class="relative px-10 mx-64 flex justify-start h-3/4 items-center">
+                <div>
+                    <h1 class="text-gray-800 dark:text-white font-bold text-6xl hover:text-red-700 font-mono">Hi! <br> I
+                        am
+                        <div class=" inline-flex">
+                            <div
+                                class=" text-white hover:-rotate-6 hover:skew-y-12 hover:scale-110 hover:text-m inline-block  transition-all duration-300 ease-in-out ">
+                                M</div>
+                            <div
+                                class=" text-white hover:rotate-6 hover:-skew-y-12 hover:scale-110 hover:text-red-500 inline-block  transition-all duration-300 ease-in-out">
+                                a</div>
+                            <div
+                                class=" text-white hover:-rotate-6 hover:skew-y-12 hover:scale-110  hover:text-n inline-block  transition-all duration-300 ease-in-out">
+                                n</div>
+                            <div
+                                class=" text-white hover:rotate-6 hover:-skew-y-12 hover:scale-110 hover:text-o inline-block  transition-all duration-300 ease-in-out">
+                                o</div>
+                            <div
+                                class=" text-white hover:-rotate-6 hover:skew-y-12 hover:scale-110 hover:text-j inline-block  transition-all duration-300 ease-in-out">
+                                j</div>
+
+
+                        </div>
+                    </h1>
+                </div>
+                <div class="absolute">
+                    <div class="absolute w-64 h-64 bg-red-500 left-48 top-48 -z-20 hidden "></div>
+                    <div class="w-48 h-48 backdrop-blur-3xl rounded absolute left-40 top-40 "></div>
+                    <div class="w-40 h-40 bg-green-300 rounded absolute left-96 top-48 "></div>
+                    <div class="w-40 h-40 bg-green-300 rounded absolute left-48 top-96 "></div>
+                    <div class="w-48 h-48 border-8 rounded  absolute left-72 top-72 "></div>
+                </div>
 
             </div>
-
         </div>
+
         <!-- title goes here -->
     </div>
     <script src="./script.js"></script>
