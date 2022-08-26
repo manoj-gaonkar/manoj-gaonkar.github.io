@@ -31,6 +31,7 @@ tailwind.config = {
                 n: '#00FFFF',
                 o: '#AA96DA',
                 j: '#C5FAD5',
+                whiteop: '#fffff007',
           }
             },
              letterSpacing: {
@@ -101,7 +102,8 @@ tailwind.config = {
                 '2/3': '66.666667%',
                 '1/4': '25%',
                 '2/4': '50%',
-                '3/4': '75%',
+                 '3/4': '75%',
+
                  full: '100%',
                 tposl: '10%'
           }),
