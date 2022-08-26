@@ -7,45 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/icons/mg_light.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./script.js"></script>
     <title>portfolio</title>
 </head>
 
 <body class="">
     <!-- main container has everything beginning -->
-    <div class="static w-screen bg-back h-full ">
-        <!-- hero container beginning -->
-        <!-- <div class="absolute   top-0 right-0 z-10 ">
-            <img src="./assets/Rectangle 6.svg" alt="">
-        </div> -->
+    <div class="static w-screen bg-gray-50 dark:bg-back h-full ">
+        <!-- nav container beginning -->
         <div class="  h-screen w-screen  relative z-50 overflow-hidden">
-            <div class="w-300 h-200 rotate-trotate bg-sidetriangle absolute -top-10 -right-1/2 -z-10"></div>
+            <div class="w-300 h-200 rotate-trotate bg-sidetriangle absolute -top-10 -right-1/2 -z-10 rounded"></div>
             <div class="mx-14 z-50">
                 <header class="h-32 flex justify-between items-center" bg-gray-500">
                     <div>
                         <div>
                             <a href="/">
-                                <img src="./assets/icons/logo/mg_light.png" class="" alt="LOGO">
+                                <img src="./assets/icons/logo/mg_light.png" class="invert dark:invert-0" alt="LOGO">
                             </a>
                         </div>
                     </div>
                     <nav>
-                        <ul class="text-secondary text-xs flex  uppercase items-center justify-between">
+                        <ul class=" invert   text-xs flex  uppercase items-center justify-between">
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
                                     href="#home"
-                                    class="z-50 px-4 font-light hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">home</a>
+                                    class="invert dark:invert-0 z-50 px-8 font-light hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">home</a>
                             </li>
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
                                     href="#about"
-                                    class="px-4 font-light hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">about</a>
+                                    class="px-8 font-light hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">about</a>
                             </li>
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
                                     href="#contact"
-                                    class="px-4 font-light hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">contact
+                                    class="px-8 font-light hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">contact
                                     me</a></li>
                             <li class="pl-10">
-                                <div
-                                    class=" bg-gray-300 rounded-full p-2 w-10 select-none cursor-move transition-rotate hover:-rotate-45 duration-150 ">
+                                <div id="mode_toggle"
+                                    class="invert bg-gray-300 rounded-full p-2 w-10 select-none cursor-move transition-rotate hover:-rotate-45 duration-150 ">
                                     <img src="./assets/icons/modes/moon_dark.png" alt="modes">
                                 </div>
                             </li>
@@ -53,10 +49,17 @@
                     </nav>
                 </header>
             </div>
+            
         </div>
-        <!-- ending of hero container -->
+        <!-- ending of nav container -->
+        <!-- begin of  hero container -->
+        <!-- title goes here -->
+        <h1 class="text-primary dark:text-white">Hi! <br> I am Manoj</h1>
     </div>
+
     <!-- ending of main container -->
 </body>
+<script src="./script.js"></script>
+
 
 </html>

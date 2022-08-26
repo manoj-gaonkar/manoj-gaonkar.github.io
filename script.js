@@ -1,4 +1,20 @@
-    tailwind.config = {
+
+modes = document.getElementById("mode_toggle");
+
+modes.addEventListener('click', function(){
+    if (document.documentElement.classList.contains('dark'))
+    {
+        document.documentElement.classList.remove('dark');
+    }
+    else {
+        document.documentElement.classList.add('dark');
+    }
+})
+
+
+// custom tailwind config
+tailwind.config = {
+    darkMode: 'class',
       theme: {
         extend: {
           colors: {
@@ -70,7 +86,7 @@
              inset: ({ theme }) => ({
                 auto: 'auto',
                 ...theme('spacing'),
-                '1/2': '50%',
+                '1/2': '30%',
                 '1/3': '33.333333%',
                 '2/3': '66.666667%',
                 '1/4': '25%',
