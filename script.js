@@ -17,6 +17,40 @@ modes.addEventListener('click', function(){
     }
 })
 
+window.addEventListener('scroll',reveal)
+
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i = 0; i < reveals.length; i++) {
+        var winh = window.innerHeight;
+        var eleh = reveals[i].getBoundingClientRect().top;
+        var revh = 190;
+        console.log(eleh, winh - revh)
+
+        if (eleh < winh - revh) {
+            reveals[i].classList.add('animate-spin');
+        }
+        else {
+            reveals[i].classList.remove('animate-spin');
+        }
+    }
+}
+
+
+// setInterval(() => {
+//     var reveals=document.querySelector('.reveal');
+//    console.log(reveals.getBoundingClientRect().top) 
+// }, 2000);
+
+
+
+
+
+
+
+
+
 
 // custom tailwind config
 tailwind.config = {
