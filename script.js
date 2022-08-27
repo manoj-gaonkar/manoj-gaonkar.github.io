@@ -1,5 +1,7 @@
 
-modes = document.getElementById("mode_toggle");
+var modes = document.getElementById("mode_toggle");
+var indicator = document.getElementById('indicator')
+
 // document.getElementsByClassName("load-wrapper").classList.add("hidden");
 // $('.load-wrapper').classList.add("hidden");
 
@@ -18,7 +20,20 @@ modes.addEventListener('click', function () {
     }
 })
 
-window.addEventListener('scroll',reveal)
+// const initpoi = indicator.getBoundingClientRect().bottom;
+// console.log(initpoi);
+var change = 1846;
+window.addEventListener('scroll', () => {
+    var poi = indicator.getBoundingClientRect().bottom;
+    var abtme = document.getElementById("aboutme");
+    console.log(poi);
+    var diff = change - poi;
+    abtme.style.transform = "translateX("+diff +"px)"; 
+
+})
+window.addEventListener('scroll', reveal)
+ window.scroll
+
 
 function reveal() {
     var reveals = document.querySelectorAll('.reveal');
@@ -26,8 +41,7 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
         var winh = window.innerHeight;
         var eleh = reveals[i].getBoundingClientRect().top;
-        var revh = 190;
-        console.log(eleh, winh - revh)
+        var revh = 120;
 
         if (eleh < winh - revh) {
             reveals[i].classList.add('activate');
