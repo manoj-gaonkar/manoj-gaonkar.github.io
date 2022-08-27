@@ -4,7 +4,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-
 .load-wrapper {
     position: absolute;
     top: 0;
@@ -48,15 +47,15 @@ body{
 
 .reveal{
     opacity: 0;
-    transform: translateY(4rem) ;
-    transition: all 1.5s ease-in-out;
+    transform: translateY(4rem)  ;
+    transition: all 1s ease-in-out;
     /* transition-delay: 1000ms; */
 }
 
 .reveal.activate{
     opacity: 1;
     transform: translateY(0) ;
-    transition-delay: 0;
+    transition-delay: 100;
 }
 
 /* scrollbar csc----------------------------------------- */
