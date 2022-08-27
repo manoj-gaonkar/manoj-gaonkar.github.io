@@ -7,7 +7,8 @@ modes = document.getElementById("mode_toggle");
 
 // load animation end
 
-modes.addEventListener('click', function(){
+modes.addEventListener('click', function () {
+
     if (document.documentElement.classList.contains('dark'))
     {
         document.documentElement.classList.remove('dark');
@@ -29,10 +30,10 @@ function reveal() {
         console.log(eleh, winh - revh)
 
         if (eleh < winh - revh) {
-            reveals[i].classList.add('animate-spin');
+            reveals[i].classList.add('activate');
         }
         else {
-            reveals[i].classList.remove('animate-spin');
+            reveals[i].classList.remove('activate');
         }
     }
 }
