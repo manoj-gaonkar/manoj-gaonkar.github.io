@@ -7,22 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/icons/logo/mg_light.png">
-    <script src="jquery-1.6.1.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>portfolio</title>
 </head>
 
-<body class="font-sans-['Poppins'] relative overflow-x-hidden">
+<body class=" relative overflow-x-hidden">
     <!-- loading wrapper -->
-    <!-- <div class="load-wrapper animate-pulse ">
+    <div class="load-wrapper  ">
         <div class="ok "></div>
-    </div> -->
+    </div>
     <!-- main container has everything beginning -->
-    <div class="static w-screen  bg-gray-50 dark:bg-back h-full ">
+    <div class=" static w-screen   bg-gray-50 dark:bg-back  overflow-hidden ">
         <!-- nav container beginning -->
-        <div class="  h-screen w-screen  relative z-50 overflow-x-hidden ">
-            <div class="w-300 h-200 rotate-trotate bg-sidetriangle absolute -top-10 -right-1/2 -z-50 rounded"></div>
-            <div class="px-14 z-40 h-auto w-full">
+        <div class="  h-screen w-screen  relative z-50  flex flex-col">
+            <div class=" w-300 h-200 rotate-trotate bg-sidetriangle absolute -top-10 -right-1/2 -z-50 rounded"></div>
+            <div class=" px-14 z-40 h-auto w-full">
                 <header class="h-36 flex justify-between items-center" bg-gray-500">
                     <div>
                         <div>
@@ -32,7 +31,7 @@
                         </div>
                     </div>
                     <nav>
-                        <ul class=" invert   text-xs flex  uppercase items-center justify-between">
+                        <ul class=" invert   text-xs flex  uppercase items-center justify-between mix-blend-screen">
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
                                     href="#home"
                                     class="invert dark:invert-0 z-50 px-8 font-normal hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">home</a>
@@ -47,7 +46,7 @@
                             </li>
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
                                     href="#contact"
-                                    class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">contact
+                                    class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">contact
                                     me</a></li>
                             <li class="pl-10">
                                 <div id="mode_toggle"
@@ -61,25 +60,25 @@
             </div>
             <!-- ending of nav container -->
             <!-- begin of  hero container -->
-            <div class="relative px-10 mx-64 flex justify-start h-3/4 items-center">
+            <div class="relative px-64  flex justify-start h-full items-center bg-red-500">
                 <div class="absolute top-1/3">
                     <h1 class="text-gray-800 dark:text-white font-bold text-6xl  font-mono">Hi! <br> I
                         am
                         <div class=" inline-flex ">
                             <div
-                                class=" text-gray-800 dark:text-white hover:-rotate-6 hover:skew-y-12 hover:scale-110 hover:text-m inline-block  transition-all duration-300 ease-in-out ">
+                                class=" text-gray-800 dark:text-white hover:-rotate-6 hover:skew-y-12 hover:scale-110 hover:text-m dark:hover:text-m  inline-block  transition-all duration-300 ease-in-out ">
                                 M</div>
                             <div
-                                class=" text-gray-800 dark:text-white hover:rotate-6 hover:-skew-y-12 hover:scale-110 hover:text-red-500 inline-block  transition-all duration-300 ease-in-out">
+                                class=" text-gray-800 dark:text-white hover:rotate-6 hover:-skew-y-12 hover:scale-110 hover:text-red-500 dark:hover:text-red-500 inline-block  transition-all duration-300 ease-in-out">
                                 a</div>
                             <div
-                                class="  text-gray-800 dark:text-white hover:-rotate-6 hover:skew-y-12 hover:scale-110  hover:text-n inline-block  transition-all duration-300 ease-in-out">
+                                class="  text-gray-800 dark:text-white hover:-rotate-6 hover:skew-y-12 hover:scale-110  hover:text-n dark:hover:text-n inline-block  transition-all duration-300 ease-in-out">
                                 n</div>
                             <div
-                                class=" text-gray-800 dark:text-white hover:rotate-6 hover:-skew-y-12 hover:scale-110 hover:text-o inline-block  transition-all duration-300 ease-in-out">
+                                class=" text-gray-800 dark:text-white hover:rotate-6 hover:-skew-y-12 hover:scale-110 hover:text-o dark:hover:text-o inline-block  transition-all duration-300 ease-in-out">
                                 o</div>
                             <div
-                                class=" text-gray-800 dark:text-white hover:-rotate-6 hover:skew-y-12 hover:scale-110 hover:text-j inline-block  transition-all duration-300 ease-in-out">
+                                class=" text-gray-800 dark:text-white hover:-rotate-6 hover:skew-y-12 hover:scale-110 hover:text-j dark:hover:text-j inline-block  transition-all duration-300 ease-in-out">
                                 j</div>
 
 
@@ -88,10 +87,10 @@
                 </div>
                 <div class="absolute right-2/4 -top-14 group bg-red-400 ">
                     <div
-                        class="w-48 h-48 backdrop-blur-3xl  bg-whiteop rounded-md absolute left-40 top-40 group-hover:scale-125 transition-all duration-1000 ease-in-out">
+                        class="w-48 h-48 backdrop-blur-3xl   rounded-md absolute left-40 top-40 group-hover:scale-125 transition-all duration-1000 ease-in-out">
                     </div>
-                    <div class="w-40 h-40 bg-green-300 rounded-md absolute left-96 top-48 group-hover:animate-spin"></div>
-                    <div class="w-40 h-40 bg-green-300 rounded-md absolute left-48 top-96 group-hover:animate-spin"></div>
+                    <div class="w-40 h-40 bg-green-300 rounded-md absolute left-96 top-48 "></div>
+                    <div class="w-40 h-40 bg-green-300 rounded-md absolute left-48 top-96 "></div>
                     <div
                         class="w-48 h-48 border-4 rounded-md  absolute left-72 top-72 group-hover:-translate-x-32 group-hover:border-gray-500 -r-0 group-hover:scale-125 group-hover:-translate-y-32 transition-all  duration-700 ease-in-out">
                     </div>
@@ -101,9 +100,11 @@
         </div>
 
         <!-- second container about me -->
-        <dev>
-            <h1 class="font-bold text-white">ocdddggdgll</h1>
-        </dev>
+        <div class=" w-screen h-screen">
+            <div class="flex justify-center items-center h-screen">
+            <h1 class="font-bold text-9xl text-white ">ocdddggdgll</h1>
+            </div>
+        </div>
 
         <!-- title goes here -->
     </div>

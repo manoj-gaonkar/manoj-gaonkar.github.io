@@ -24,7 +24,7 @@ tailwind.config = {
       theme: {
         extend: {
           colors: {
-                back: '#151515',
+                back: '#0a0a0a',
                 secondary: '#EAEAEA',
                 sidetriangle: '#4D4D4D',
                 m: '#FEE715FF ',
