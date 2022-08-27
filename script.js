@@ -24,14 +24,14 @@ tailwind.config = {
       theme: {
         extend: {
           colors: {
-                back: '#0a0a0a',
+                back: '#0a090f',
                 secondary: '#EAEAEA',
                 sidetriangle: '#4D4D4D',
                 m: '#FEE715FF ',
                 n: '#00FFFF',
                 o: '#AA96DA',
                 j: '#C5FAD5',
-                whiteop: '#fffff007',
+                whiteop: 'rgba(255, 250, 250, 0.068)',
           }
             },
              letterSpacing: {
@@ -92,7 +92,7 @@ tailwind.config = {
                 45: '45deg',
                 90: '90deg',
                 180: '180deg',
-                trotate: '35deg',
+                trotate: '36deg',
             },
              inset: ({ theme }) => ({
                 auto: 'auto',
@@ -105,7 +105,7 @@ tailwind.config = {
                  '3/4': '75%',
 
                  full: '100%',
-                tposl: '10%'
+                tposl: '45%'
           }),
                 height: ({ theme }) => ({
                 auto: 'auto',
