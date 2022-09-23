@@ -4,6 +4,43 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.aboutfade{
+    animation: aboutfade 1s forwards;
+}
+
+@keyframes aboutfade {
+    from{
+        transform: translate(-50%,0);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+.waves{
+    scale: 6;
+    z-index: -10 ;
+    animation: waves 5s infinite ;
+}
+
+@keyframes waves{
+    0%{
+        transform: translate(-30%,0);
+    }
+    30%{
+        transform: translate(-20%,10%);
+    }
+    60%{
+        transform: translate();
+    }
+    100%{
+        transform: translate(-30%,0);
+    }
+
+}
+
 .load-wrapper {
     position: absolute;
     top: 0;

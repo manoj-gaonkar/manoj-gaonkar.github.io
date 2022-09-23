@@ -120,10 +120,13 @@
         <!-- title goes here -->
         <span id="indicator"></span>
     </div>
+
     <!-- about me -->
     <div class="w-screen h-screen fixed left-0 top-0 bg-[rgba(0,0,0,0.9)]  z-[100] backdrop-blur-md " id="showabout">
+        
         <div class="fixed flex justify-center items-center h-full">
-            <h2 class=" font-semibold text-6xl text-center border-b-2 leading-[.1em]  uppercase -rotate-90 text-gray-600  tracking-widest "><span class="bg-[rgba(0,0,0,1)]"> AbOuT </span> </h2>
+            
+            <h2 class=" font-semibold text-6xl text-center  leading-[.1em]  uppercase -rotate-90 text-gray-600  tracking-widest aboutfade "><span class="bg-[rgba(0,0,0,0)]"> AbOuT </span> </h2>
         </div>
         <div class=" m-auto w-2/4 pt-36 flex justify-center items-start">
                 <div class="w-64 h-64  group relative inline-block">            
@@ -132,17 +135,20 @@
                     </div>
                     <div class="w-64 h-64 border-2 rounded border-red-100  group-hover:translate-x-1 group-hover:translate-y-1 absolute -top-0 -z-10 transition-all duration-500 ease-in-out"></div>
                 </div>
-                <div class=" text-white font-mono pl-10 tracking-wider leading-7  ">Hello buds, I am Manoj and my interests are developing web applications and thats all. I am doing Bachelors in Engineering from SDM Institute of Technology. I have a passion for learning new things and have built several projects on Django Framework.</div>
+                <div class=" text-white font-mono pl-10 tracking-wider leading-7 aboutfade  ">Hello buds, I am <span class=" font-bold "> Manoj </span>and my interests are developing web applications and thats all. I am doing Bachelors in Engineering from SDM Institute of Technology. I have a passion for learning new things and have built several projects on Django Framework.</div>
+                <img src="./assets/Vector 1.svg" class="absolute bottom-0 bg-repeat waves" alt="" >
+            </div>
+            
+            <div class="fixed top-10 right-10">
+                <span class="material-symbols-outlined scale-125 text-white cursor-pointer " id="closeabout" >
+                    close
+                </span>
+            </div>
+            
         </div>
-
-        <div class="fixed top-10 right-10">
-            <span class="material-symbols-outlined scale-125 text-white cursor-pointer " id="closeabout" >
-                close
-            </span>
-        </div>
-    </div>
-    <!-- but me end -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- but me end -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         
         $(window).on('load', function () {
