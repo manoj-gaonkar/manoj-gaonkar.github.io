@@ -15,7 +15,7 @@ body{
 }
 div .aboutfade.info{
     animation-delay: 0.5s;
-    animation-timing-function: cubic-bezier(.59, .09, .48, .91);
+    animation-timing-function: cubic-bezier(.59, .09, .48, 1.1);
 }
 
 @keyframes aboutfade {
@@ -32,28 +32,39 @@ div .aboutfade.info{
     }
 }
 
-.parallax>use{
-    animation: waves 25s infinite;
+#social_icons{
+    animation: social 1.4s forwards cubic-bezier(.53, .1, .12, 1.4);
 }
 
-.parallax>use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
+#social_icons>p:nth-child(1){
+    animation-timing-function: cubic-bezier(.11, .32, .11, .96);
+    animation-delay: 0.3s;
+}
+#social_icons>p:nth-child(2) {
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(.31, .18, .24, .97);
+}
+#social_icons>p:nth-child(3) {
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(.66, .14, .44, .91);
+}
+#social_icons>p:nth-child(4) {
+    animation-delay: 1.7s;
+    animation-timing-function: cubic-bezier(.82, .06, .65, 1.02);
 }
 
-.parallax>use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
-}
-
-.parallax>use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-}
-
-.parallax>use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
+@keyframes social {
+    from{
+        opacity: 0;
+        transform: translateX(7%);
+    }
+    40%{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+        transform: translateX(0);
+    }
 }
 
 @keyframes waves{
