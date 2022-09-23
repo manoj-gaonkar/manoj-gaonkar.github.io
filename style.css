@@ -5,40 +5,75 @@ body{
 }
 
 .aboutfade{
-    animation: aboutfade 1s forwards;
+    animation: aboutfade 1s forwards  ;
+    animation-delay: 0.1s;
+}
+
+.aboutfade.photo{
+    animation-timing-function: cubic-bezier(.43, .1, .19, .91);
+    animation-delay:0.3s;    
+}
+div .aboutfade.info{
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(.59, .09, .48, .91);
 }
 
 @keyframes aboutfade {
     from{
-        transform: translate(-50%,0);
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    50%{
         opacity: 0;
     }
     to{
-        transform: translate(0,0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
 
-.waves{
-    scale: 6;
-    z-index: -10 ;
-    animation: waves 5s infinite ;
+.parallax>use{
+    animation: waves 25s infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
 }
 
 @keyframes waves{
     0%{
-        transform: translate(-30%,0);
+        transform: translate(0%,0);
     }
     30%{
         transform: translate(-20%,10%);
     }
     60%{
-        transform: translate();
+        transform: translate(20%,0);
     }
     100%{
-        transform: translate(-30%,0);
+        transform: translate(0%,0);
     }
 
+}
+
+.parallax:nth-child(1){
+    transform: translate(-100px,0);
 }
 
 .load-wrapper {
@@ -111,3 +146,4 @@ body{
     border-radius: 20px;
     margin-left: 40px;
 }
+/*  */
