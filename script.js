@@ -1,6 +1,9 @@
 
 var modes = document.getElementById("mode_toggle");
-var indicator = document.getElementById('indicator')
+var indicator = document.getElementById('indicator');
+var about = document.getElementById('about');
+var showabout = document.getElementById('showabout');
+var closeabout = document.getElementById('closeabout');
 
 // document.getElementsByClassName("load-wrapper").classList.add("hidden");
 // $('.load-wrapper').classList.add("hidden");
@@ -51,6 +54,11 @@ function reveal() {
         }
     }
 }
+
+// function openabout() {
+//     showabout.classList.remove('hidden');
+//     console.log("manoj");
+// }
 
 
 // setInterval(() => {
