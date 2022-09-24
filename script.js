@@ -29,7 +29,6 @@ var change = 923*2;
 window.addEventListener('scroll', () => {
     var poi = indicator.getBoundingClientRect().bottom;
     var abtme = document.getElementById("aboutme");
-    console.log(( 923*3)-poi);
     var diff = change - poi;
     abtme.style.transform = "translateX("+(diff-990) +"px)"; 
 
