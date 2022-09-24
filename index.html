@@ -24,39 +24,12 @@
             <div class=" w-300 h-200 rotate-trotate bg-sidetriangle absolute -top-10 -right-1/2 -z-50 rounded hidden md:block "
                 id="background"></div>
             <!-- nav container beginning -->
-            <!-- nav for  mobile -->
 
-            <nav class="fixed w-screen h-screen flex justify-center items-center backdrop-blur-lg md:hidden   z-[300]">
-                <ul class=" invert   text-xs  flex-col  h-full flex   uppercase items-center justify-around  text-center ">
-                    <li class=" hover:scale-110 hover:rotate-2 transition-rotate  duration-200 ease-in-out"><a href="#home"
-                            class="invert dark:invert-0 z-50 px-8 font-normal  hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">home</a>
-                    </li>
-                    <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out cursor-pointer">
-                        <p href="#" id="about" onclick="openabout();"
-                            class="invert dark:invert-0 px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">
-                            about</>
-                    </li>
-                    <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a href="#projects"
-                            class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">projects</a>
-                    </li>
-                    <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a href="#contact"
-                            class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">contact
-                            me</a></li>
-                </ul>
-            </nav>
-             <!-- nav for mobile ends here -->
 
-            <div class=" px-14 -z-10 h-auto w-full ">
-                <!-- for mobile screen bro -->
-                <div class="absolute right-6 top-6 text-white flex flex-col justify-between md:hidden" onclick="openmobilemenu()">
-                    <div class="w-6 h-[3px] bg-white my-[2px] " id="one"></div>
-                    <div class="w-6 h-[3px] bg-white my-[2px] " id="two"></div>
-                    <div class="w-6 h-[3px] bg-white my-[2px] " id="three"></div>
-                </div>
-
+            <div class="  -z-10 h-36 w-screen ">
                 
-                <!-- mobile screen end here -->
-                <header class="h-screen w-screen md:h-36  md:flex flex-col md:flex-row justify-center hidden  md:justify-between items-center" bg-gray-500">
+                <header
+                    class=" w-screen  h-36   md:flex flex-row justify-between  hidden  items-center m-auto px-16" id="home">
                     <div>
                         <div>
                             <a href="/">
@@ -65,16 +38,17 @@
                         </div>
                     </div>
                     <nav>
-                        <ul class=" invert   text-xs  flex-col md:flex-row h-full  md:flex   uppercase items-center justify-between ">
+                        <ul
+                            class=" invert   text-xs  flex-col md:flex-row h-full  md:flex   uppercase items-center justify-between ">
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate  duration-200 ease-in-out"><a
                                     href="#home"
                                     class="invert dark:invert-0 z-50 px-8 font-normal  hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">home</a>
                             </li>
                             <li
                                 class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out cursor-pointer">
-                                <p href="#" id="about" onclick="openabout();"
+                                <a href="#" id="about" onclick="openabout();"
                                     class="invert dark:invert-0 px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">
-                                    about</>
+                                    about</a>
                             </li>
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
                                     href="#projects"
@@ -95,11 +69,53 @@
                 </header>
             </div>
             <!-- ending of nav container -->
+            <!-- nav for  mobile -->
+
+            <!-- for mobile screen bro -->
+            <div class="absolute right-6 top-6 text-white  flex-col justify-between md:hidden" onclick="openmobilemenu();">
+                <div class="w-6 h-[3px] bg-white my-[5px] transition-all ease-in-out duration-500 z-[300] relative " id="one"></div>
+                <div class="w-6 h-[3px] bg-white my-[5px] transition-all ease-in-out duration-500 z-[300] relative  " id="two"></div>
+                <div class="w-6 h-[3px] bg-white my-[5px] transition-all ease-in-out duration-500 z-[300] relative " id="three"></div>
+            </div>
+            <!-- mobile screen end here -->
+
+            <nav class="fixed w-screen h-screen hidden md:hidden justify-center items-center backdrop-blur-lg bg-[rgba(0,0,0,0.5)]  z-[90]" id="mobilenav">
+                
+                <ul
+                    class=" invert   text-xs  flex-col  h-full flex   uppercase items-center justify-around  text-center ">
+                    <li class=" hover:scale-110 hover:rotate-2 transition-rotate  duration-200 ease-in-out"><a
+                            href="#home"
+                            onclick="openmobilemenu();"
+                            class="invert dark:invert-0 z-50 px-8 font-normal  hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">home</a>
+                    </li>
+                    <li
+                        class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out cursor-pointer">
+                        <a href="#home" id="aboutmob" onclick="openabout(); openmobilemenu();"
+                            class="invert dark:invert-0 px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">
+
+                            about</a>
+                    </li>
+                    <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
+                            href="#projects"
+                            onclick="openmobilemenu();"
+                            class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">projects</a>
+                    </li>
+                    <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
+                            href="#contact"
+                            class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">contact
+                            me</a></li>
+                </ul>
+            </nav>
+            <!-- nav for mobile ends here -->
+
+
             <!-- begin of  hero container -->
             <div class="relative  md:px-64  flex justify-start h-full items-center  ">
                 <div class="absolute top-1/3">
-                    <h1 class="text-gray-800 dark:text-white font-bold  text-2xl pl-20  md:text-6xl  font-mono select-none " >Hi! <br> I
-                    am
+                    <h1
+                        class="text-gray-800 dark:text-white font-bold  text-2xl pl-20  md:text-6xl  font-mono select-none ">
+                        Hi! <br> I
+                        am
                         <div class=" inline-flex ">
                             <div
                                 class="  text-gray-800 dark:text-white hover:-rotate-6 hover:skew-y-12 hover:scale-110 hover:text-m dark:hover:text-m  inline-block  transition-all duration-300 ease-in-out hover:-translate-y-1">
@@ -131,10 +147,10 @@
                         </a>
                     </div>
                     <div
-                        class="w-40 h-40 bg-green-300 rounded-md absolute left-96 top-48 group-hover:scale-75 transition-all duration-500 delay-150 group-hover:skew-y-12 group-hover:hover:-skew-y-0 group-hover:opacity-50 group-hover:hover:opacity-90 ease-in-out ">
+                        class="w-40 h-40 bg-purple-400 rounded-md absolute left-96 top-48 group-hover:scale-75 transition-all duration-500 delay-150 group-hover:skew-y-12 group-hover:hover:-skew-y-0 group-hover:opacity-50 group-hover:hover:opacity-90 ease-in-out ">
                     </div>
                     <div
-                        class="w-40 h-40 bg-green-300 rounded-md absolute left-48 top-96 group-hover:scale-75 transition-all duration-500 delay-150 group-hover:skew-x-12 group-hover:hover:-skew-x-0 group-hover:opacity-50 group-hover:hover:opacity-90 ease-in-out ">
+                        class="w-40 h-40 bg-purple-400 rounded-md absolute left-48 top-96 group-hover:scale-75 transition-all duration-500 delay-150 group-hover:skew-x-12 group-hover:hover:-skew-x-0 group-hover:opacity-50 group-hover:hover:opacity-90 ease-in-out ">
                     </div>
                     <div
                         class="w-48 h-48 ring-8 ring-white group-hover:ring-whiteop rounded-md  absolute left-72 top-72 group-hover:-translate-x-32 group-hover:border-gray-500 -r-0 group-hover:scale-125 group-hover:-translate-y-32 transition-all  duration-700 ease-in-out ">
@@ -148,28 +164,34 @@
 
         <!-- second container about me -->
 
-
         <div class=" w-screen h-screen relative " id="projects">
             <div class="flex items-center justify-center h-full w-full break-normal">
-                <h1 class="break-normal font-extralight text-[25rem] relative  text-gray-700 dark:text-gray-700  uppercase    opacity-[0.1] select-none translate-x-[1900px] "
+                <h1 class="break-normal font-extralight text-[25rem] relative  text-gray-700 dark:text-gray-500  uppercase    opacity-[0.1] select-none translate-x-[1900px] "
                     id="aboutme">Projects</h1>
             </div>
+<span id="indicator"></span>
+
             <div class="w-full h-fit  absolute top-0  ">
                 <div class=" w-full  text-center mt-24">
-                    <p class="text-4xl md:text-6xl dark:text-white text-gray-800 mx-auto w-full uppercase py-4 ">Projects</p>
+                    <p class="text-4xl md:text-6xl dark:text-white text-gray-800 mx-auto w-full uppercase py-4 ">
+                        Projects</p>
                 </div>
                 <div class="w-3/4 mx-auto  h-full grid grid-cols-1 md:grid-cols-3 mt-10 gap-6 ">
                     <!-- project list starts here -->
-                    <div class="w-full h-fit md:h-64 bg-red-900 overflow-hidden rounded-md group relative object-cover ">
-                        <img src="./assets/projects/google-clone.png" alt="" class="relative z-10 scale-100 group-hover:scale-125 transition-all duration-500 ease-out object-cover ">
-                        <div class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
-                            <div class=" text-white opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
+                    <div
+                        class="w-full h-fit md:h-64 bg-red-900 overflow-hidden rounded-md group relative object-cover ">
+                        <img src="./assets/projects/google-clone.png" alt=""
+                            class="relative z-10 scale-100 group-hover:scale-125 transition-all duration-500 ease-out object-cover ">
+                        <div
+                            class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
+                            <div
+                                class=" text-white opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
                                 Google Clone(Django)
                             </div>
                             <a href="https://google-clone-dj.herokuapp.com/" target="_blank">
-                            <span class="material-symbols-outlined text-white  animate-bounce py-4">
-                                link
-                            </span>
+                                <span class="material-symbols-outlined text-white  animate-bounce py-4">
+                                    link
+                                </span>
                             </a>
 
                         </div>
@@ -191,7 +213,7 @@
                                     link
                                 </span>
                             </a>
-                    
+
                         </div>
                     </div>
 
@@ -205,12 +227,12 @@
                                 class=" text-white opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
                                 Todo List(Django)
                             </div>
-                            <a href="https://github.com/manoj-gaonkar/ToDo-List" target="_blank" >
+                            <a href="https://github.com/manoj-gaonkar/ToDo-List" target="_blank">
                                 <span class="material-symbols-outlined text-white  animate-bounce py-4">
                                     link
                                 </span>
                             </a>
-                    
+
                         </div>
                     </div>
 
@@ -228,7 +250,7 @@
                                     link
                                 </span>
                             </a>
-                    
+
                         </div>
                     </div>
 
@@ -247,7 +269,7 @@
                                     link
                                 </span>
                             </a>
-                    
+
                         </div>
                     </div>
 
@@ -262,17 +284,20 @@
 
 
         <!-- title goes here -->
-        <span id="indicator"></span>
+        
     </div>
 
     <!-- about me -->
-    <div class="w-screen h-screen overflow-y-scroll overflow-x-hidden md:overflow-hidden fixed left-0 top-0 dark:bg-[rgba(0,0,0,0.9)] bg-[rgba(255,255,255,0.7)]   z-[100] backdrop-blur-md  hidden" id="showabout">
+    <div class="w-screen h-screen overflow-y-scroll overflow-x-hidden md:overflow-hidden fixed left-0 top-0 dark:bg-[rgba(0,0,0,0.9)] bg-[rgba(255,255,255,0.7)]   z-[100] backdrop-blur-md  hidden"
+        id="showabout">
 
-        <div class="fixed left-0 top-0 md:flex  flex-col justify-center items-center h-fit md:h-full aboutfade opacity-0 md:py-0 py-16  w-full md:w-fit">
+        <div
+            class="fixed left-0 top-0 md:flex  flex-col justify-center items-center h-fit md:h-full aboutfade opacity-0 md:py-0 py-16  w-full md:w-fit">
 
             <h2
                 class=" font-semibold text-2xl md:text-6xl text-center  uppercase md:-rotate-90 text-purple-400  tracking-widest about mx-auto ">
-                <span class="bg-[rgba(0,0,0,0)] cursor-default select-none"> about </span> </h2>
+                <span class="bg-[rgba(0,0,0,0)] cursor-default select-none"> about </span>
+            </h2>
         </div>
         <div class=" m-auto w-4/6 md:w-3/6  flex flex-col md:flex-row justify-center items-center h-full ">
             <div class="w-32 h-32 md:w-64 md:h-64 group relative inline-block aboutfade photo opacity-0 z-50   ">
@@ -290,35 +315,38 @@
             </div>
 
             <div class="flex justify-between items-start flex-col">
-                <div class=" font-mono text-center md:text-left md:pl-10 pt-10 md:pt-0 text-sm tracking-wider leading-7 aboutfade info opacity-0 -z-40 dark:text-purple-100 text-black">
+                <div
+                    class=" font-mono text-center md:text-left md:pl-10 pt-10 md:pt-0 text-sm tracking-wider leading-7 aboutfade info opacity-0 -z-40 dark:text-purple-100 text-black">
                     Hello buds, I am <span class=" font-bold "> Manoj </span>and my interests are developing web
                     applications and thats all. I am doing Bachelors in Engineering from SDM Institute of Technology. I
                     have a passion for learning new things and have built several projects on Django Framework.</div>
 
-                    
+
             </div>
         </div>
 
         <div class="fixed top-10 right-10">
-            <span class="material-symbols-outlined scale-125 dark:text-white text-black cursor-pointer " id="closeabout">
+            <span class="material-symbols-outlined scale-125 dark:text-white text-black cursor-pointer click select-none noselect"
+                id="closeabout">
                 close
             </span>
         </div>
 
-        <div class=" text-white pl-10 w-full  md:fixed bottom-0 md:bottom-auto md:left-[40%] md:top-2/4   -translate-y-[50%] ">
-            <div class="flex flex-col  justify-start items-center w-full " id="social_icons" >
+        <div
+            class=" text-white pl-10 w-full  md:fixed bottom-0 md:bottom-auto md:left-[40%] md:top-2/4   -translate-y-[50%] ">
+            <div class="flex flex-col  justify-start items-center w-full " id="social_icons">
                 <!-- linkedin -->
                 <p class="py-2 transition-all duration-300 hover:-translate-y-2 opacity-60 hover:opacity-100">
                     <a href="https://www.linkedin.com/in/manoj-gaonkar/" target="_blank" class="inline-block">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" stroke-width="2"
-                            viewBox="0 0 50 50" class="h-8 p-1 self-center  stroke-black dark:stroke-white" >
+                            viewBox="0 0 50 50" class="h-8 p-1 self-center  stroke-black dark:stroke-white">
                             <path
                                 d="M 8 3.0117188 C 6.3126093 3.0117188 4.8354789 3.4916328 3.7539062 4.3652344 C 2.6723337 5.238836 2.0117188 6.533218 2.0117188 7.9472656 C 2.0117188 10.690836 4.4687078 12.814467 7.7167969 12.941406 A 0.98809878 0.98809878 0 0 0 8 12.988281 C 9.753566 12.988281 11.246191 12.474267 12.3125 11.564453 C 13.378809 10.654639 13.988281 9.3429353 13.988281 7.9472656 A 0.98809878 0.98809878 0 0 0 13.986328 7.8925781 C 13.832307 5.1316834 11.374781 3.0117187 8 3.0117188 z M 8 4.9882812 C 10.60907 4.9882812 11.895883 6.2693448 12.005859 7.9726562 C 11.998759 8.8049335 11.676559 9.5118991 11.03125 10.0625 C 10.378809 10.619186 9.371434 11.011719 8 11.011719 C 5.3980542 11.011719 3.9882813 9.5991704 3.9882812 7.9472656 C 3.9882812 7.1213132 4.3276663 6.4422421 4.9960938 5.9023438 C 5.6645211 5.3624454 6.6873907 4.9882813 8 4.9882812 z M 3 15 A 1.0001 1.0001 0 0 0 2 16 L 2 45 A 1.0001 1.0001 0 0 0 3 46 L 13 46 A 1.0001 1.0001 0 0 0 14 45 L 14 35.664062 L 14 16 A 1.0001 1.0001 0 0 0 13 15 L 3 15 z M 18 15 A 1.0001 1.0001 0 0 0 17 16 L 17 45 A 1.0001 1.0001 0 0 0 18 46 L 28 46 A 1.0001 1.0001 0 0 0 29 45 L 29 29 L 29 28.75 L 29 28.5 C 29 26.555577 30.555577 25 32.5 25 C 34.444423 25 36 26.555577 36 28.5 L 36 45 A 1.0001 1.0001 0 0 0 37 46 L 47 46 A 1.0001 1.0001 0 0 0 48 45 L 48 28 C 48 23.873476 46.787888 20.604454 44.744141 18.375 C 42.700394 16.145546 39.849212 15 36.787109 15 C 32.882872 15 30.521631 16.426076 29 17.601562 L 29 16 A 1.0001 1.0001 0 0 0 28 15 L 18 15 z M 4 17 L 12 17 L 12 35.664062 L 12 44 L 4 44 L 4 17 z M 19 17 L 27 17 L 27 19.638672 A 1.0001 1.0001 0 0 0 28.744141 20.306641 C 28.744141 20.306641 31.709841 17 36.787109 17 C 39.360007 17 41.615528 17.922268 43.269531 19.726562 C 44.923534 21.530858 46 24.261524 46 28 L 46 44 L 38 44 L 38 28.5 A 1.0001 1.0001 0 0 0 37.916016 28.089844 C 37.694061 25.26411 35.38033 23 32.5 23 C 29.474423 23 27 25.474423 27 28.5 L 27 28.75 L 27 29 L 27 44 L 19 44 L 19 17 z">
                             </path>
                         </svg>
                     </a>
-                <p/>
-                <!-- github -->
+                    <p />
+                    <!-- github -->
                 <p class="py-2 transition-all duration-300 hover:-translate-y-2 opacity-60 hover:opacity-100">
                     <a href="https://github.com/manoj-gaonkar" target="_blank" class="inline-block">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
@@ -376,6 +404,10 @@
         $('#about').on('click', function () {
             $('#showabout').fadeToggle('hidden');
         })
+
+        $('#aboutmob').on('click', function () {
+                $('#showabout').fadeToggle('hidden');
+            })
 
         $('#closeabout').on('click', function () {
             $('#showabout').fadeToggle('hidden');

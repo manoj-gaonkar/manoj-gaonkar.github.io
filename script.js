@@ -61,12 +61,20 @@ function reveal() {
 // }
 
 
+
+
 // setInterval(() => {
 //     var reveals=document.querySelector('.reveal');
 //    console.log(reveals.getBoundingClientRect().top) 
 // }, 2000);
 
 
+function openmobilemenu() {
+    $('#one').toggleClass('oneanimation');
+    $('#two').toggleClass('twoanimation');
+    $('#three').toggleClass('threeanimation');
+    $('#mobilenav').fadeToggle('hidden');
+}
 
 
 
