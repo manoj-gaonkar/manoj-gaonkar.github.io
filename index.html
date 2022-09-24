@@ -21,11 +21,18 @@
     <!-- main container has everything beginning -->
     <div class=" static w-screen   bg-gray-50 dark:bg-back  overflow-hidden  ">
         <div class="  h-screen w-screen  relative z-50  flex flex-col" id="transstyle">
-            <div class=" w-300 h-200 rotate-trotate bg-sidetriangle absolute -top-10 -right-1/2 -z-50 rounded "
+            <div class=" w-300 h-200 rotate-trotate bg-sidetriangle absolute -top-10 -right-1/2 -z-50 rounded hidden md:block "
                 id="background"></div>
             <!-- nav container beginning -->
             <div class=" px-14 -z-10 h-auto w-full ">
-                <header class="h-36 flex justify-between items-center" bg-gray-500">
+                <!-- for mobile screen bro -->
+                <div class="absolute right-6 top-6 text-white flex flex-col justify-between" onclick="openmobilemenu()">
+                    <div class="w-6 h-[3px] bg-white my-[2px] " id="one"></div>
+                    <div class="w-6 h-[3px] bg-white my-[2px] " id="two"></div>
+                    <div class="w-6 h-[3px] bg-white my-[2px] " id="three"></div>
+                </div>
+                <!-- mobile screen end here -->
+                <header class="h-36  md:flex justify-between items-center" bg-gray-500">
                     <div>
                         <div>
                             <a href="/">
@@ -65,10 +72,10 @@
             </div>
             <!-- ending of nav container -->
             <!-- begin of  hero container -->
-            <div class="relative px-64  flex justify-start h-full items-center ">
+            <div class="relative  md:px-64  flex justify-start h-full items-center  ">
                 <div class="absolute top-1/3">
-                    <h1 class="text-gray-800 dark:text-white font-bold text-6xl  font-mono select-none">Hi! <br> I
-                        am
+                    <h1 class="text-gray-800 dark:text-white font-bold  text-2xl pl-20  md:text-6xl  font-mono select-none " >Hi! <br> I
+                    am
                         <div class=" inline-flex ">
                             <div
                                 class="  text-gray-800 dark:text-white hover:-rotate-6 hover:skew-y-12 hover:scale-110 hover:text-m dark:hover:text-m  inline-block  transition-all duration-300 ease-in-out hover:-translate-y-1">
@@ -90,7 +97,7 @@
                         </div>
                     </h1>
                 </div>
-                <div class="absolute right-tposl -top-7 group h-full" id="background">
+                <div class="absolute right-tposl -top-7 group h-full hidden md:block" id="background">
                     <div
                         class=" w-48 h-48 backdrop-blur-3xl  bg-whiteop rounded-md absolute left-40 top-40 group-hover:scale-125 transition-all duration-1000 ease-in-out bg-cover ">
                         <a href="#">
@@ -125,12 +132,12 @@
             </div>
             <div class="w-full h-fit  absolute top-0  ">
                 <div class=" w-full  text-center mt-24">
-                    <p class="text-6xl dark:text-white text-gray-800 mx-auto w-full uppercase py-4 ">Projects</p>
+                    <p class="text-4xl md:text-6xl dark:text-white text-gray-800 mx-auto w-full uppercase py-4 ">Projects</p>
                 </div>
-                <div class="w-3/4 mx-auto  h-full grid grid-cols-3 mt-10 gap-6 ">
+                <div class="w-3/4 mx-auto  h-full grid grid-cols-1 md:grid-cols-3 mt-10 gap-6 ">
                     <!-- project list starts here -->
-                    <div class="w-full h-64 bg-red-900 overflow-hidden rounded-md group relative ">
-                        <img src="./assets/projects/google-clone.png" alt="" class="relative z-10 scale-100 group-hover:scale-125 transition-all duration-500 ease-out ">
+                    <div class="w-full h-fit md:h-64 bg-red-900 overflow-hidden rounded-md group relative object-cover ">
+                        <img src="./assets/projects/google-clone.png" alt="" class="relative z-10 scale-100 group-hover:scale-125 transition-all duration-500 ease-out object-cover ">
                         <div class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
                             <div class=" text-white opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
                                 Google Clone(Django)
@@ -146,7 +153,7 @@
 
 
 
-                    <div class="w-full h-64 bg-red-900 overflow-hidden rounded-md group relative">
+                    <div class="w-full h-fit md:h-64  overflow-hidden rounded-md group relative">
                         <img src="./assets/projects/imagegallery.png" alt=""
                             class="relative z-10 scale-100 group-hover:scale-125 transition-all duration-500 ease-out ">
                         <div
@@ -165,7 +172,7 @@
                     </div>
 
 
-                    <div class="w-full h-64 bg-red-900 overflow-hidden rounded-md group relative">
+                    <div class="w-full h-fit md:h-64 overflow-hidden rounded-md group relative">
                         <img src="./assets/projects/todolist.png" alt=""
                             class="relative z-10 scale-100 group-hover:scale-125 transition-all duration-500 ease-out ">
                         <div
@@ -183,7 +190,7 @@
                         </div>
                     </div>
 
-                    <div class="w-full h-64 bg-red-900 overflow-hidden rounded-md group relative">
+                    <div class="w-full h-fit md:h-64  overflow-hidden rounded-md group relative">
                         <img src="./assets/projects/rps.png" alt=""
                             class="relative z-10 scale-100 group-hover:scale-125 transition-all duration-500 ease-out ">
                         <div
@@ -202,7 +209,7 @@
                     </div>
 
 
-                    <div class="w-full h-64 bg-red-900 overflow-hidden rounded-md group relative">
+                    <div class="w-full h-fit md:h-64  overflow-hidden rounded-md group relative">
                         <img src="./assets/projects/weatherapp.png" alt=""
                             class="relative z-10 scale-100 group-hover:scale-125 transition-all duration-500 ease-out ">
                         <div
@@ -235,18 +242,18 @@
     </div>
 
     <!-- about me -->
-    <div class="w-screen h-screen fixed left-0 top-0 dark:bg-[rgba(0,0,0,0.9)] bg-[rgba(255,255,255,0.7)]   z-[100] backdrop-blur-md hidden " id="showabout">
+    <div class="w-screen h-screen overflow-y-scroll overflow-x-hidden md:overflow-hidden fixed left-0 top-0 dark:bg-[rgba(0,0,0,0.9)] bg-[rgba(255,255,255,0.7)]   z-[100] backdrop-blur-md  hidden" id="showabout">
 
-        <div class="fixed flex justify-center items-center h-full aboutfade  ">
+        <div class="fixed left-0 top-0 md:flex  flex-col justify-center items-center h-fit md:h-full aboutfade opacity-0 md:py-0 py-16  w-full md:w-fit">
 
             <h2
-                class=" font-semibold text-6xl text-center  leading-[.1em]  uppercase -rotate-90 text-purple-400  tracking-widest about  ">
-                <span class="bg-[rgba(0,0,0,0)] cursor-default select-none"> AbOuT </span> </h2>
+                class=" font-semibold text-2xl md:text-6xl text-center  uppercase md:-rotate-90 text-purple-400  tracking-widest about mx-auto ">
+                <span class="bg-[rgba(0,0,0,0)] cursor-default select-none"> about </span> </h2>
         </div>
-        <div class=" m-auto w-3/6  flex justify-center items-center h-full ">
-            <div class="w-64 h-64  group relative inline-block aboutfade photo opacity-0 z-50   ">
+        <div class=" m-auto w-4/6 md:w-3/6  flex flex-col md:flex-row justify-center items-center h-full ">
+            <div class="w-32 h-32 md:w-64 md:h-64 group relative inline-block aboutfade photo opacity-0 z-50   ">
                 <div
-                    class="w-64 h-64 rounded overflow-hidden relative group-hover:-translate-x-2 group-hover:-translate-y-2 transition-all duration-200 ease-in-out ">
+                    class="w-32 h-32 md:w-64 md:h-64 rounded overflow-hidden relative group-hover:-translate-x-2 group-hover:-translate-y-2 transition-all duration-200 ease-in-out ">
                     <div
                         class="rounded w-full h-full absolute  z-10 bg-[rgba(125,0,255,0.42)]  opacity-60   group-hover:hidden">
                     </div>
@@ -254,17 +261,17 @@
                         class=" rounded -z-0 relative  w-[50rem] scale-[1.4] object-top hover:grayscale-[0.4] grayscale-[1] transition-all duration-200 ">
                 </div>
                 <div
-                    class="w-64 h-64 border-2 rounded dark:border-red-100 border-black group-hover:translate-x-1 group-hover:translate-y-1 absolute -top-0 -z-10 transition-all duration-500 ease-in-out">
+                    class="w-32 h-32 md:w-64 md:h-64 border-2 rounded dark:border-red-100 border-black group-hover:translate-x-1 group-hover:translate-y-1 absolute -top-0 -z-10 transition-all duration-500 ease-in-out">
                 </div>
             </div>
 
             <div class="flex justify-between items-start flex-col">
-                <div class=" font-mono pl-10 tracking-wider leading-7 aboutfade info opacity-0 -z-40 dark:text-purple-100 text-black">
+                <div class=" font-mono text-center md:text-left md:pl-10 pt-10 md:pt-0 text-sm tracking-wider leading-7 aboutfade info opacity-0 -z-40 dark:text-purple-100 text-black">
                     Hello buds, I am <span class=" font-bold "> Manoj </span>and my interests are developing web
                     applications and thats all. I am doing Bachelors in Engineering from SDM Institute of Technology. I
                     have a passion for learning new things and have built several projects on Django Framework.</div>
 
-
+                    
             </div>
         </div>
 
@@ -274,8 +281,8 @@
             </span>
         </div>
 
-        <div class=" text-white pl-10 w-full  fixed left-[40%] top-2/4  -translate-y-[50%] ">
-            <div class="flex flex-col justify-start items-center w-full " id="social_icons" >
+        <div class=" text-white pl-10 w-full  md:fixed bottom-0 md:bottom-auto md:left-[40%] md:top-2/4   -translate-y-[50%] ">
+            <div class="flex flex-col  justify-start items-center w-full " id="social_icons" >
                 <!-- linkedin -->
                 <p class="py-2 transition-all duration-300 hover:-translate-y-2 opacity-60 hover:opacity-100">
                     <a href="https://www.linkedin.com/in/manoj-gaonkar/" target="_blank" class="inline-block">

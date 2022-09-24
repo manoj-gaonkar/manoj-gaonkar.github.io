@@ -33,7 +33,7 @@ div .aboutfade.info{
 }
 
 #social_icons{
-    animation: social 1.4s forwards cubic-bezier(.53, .1, .12, 1.4);
+    animation: social 2s forwards cubic-bezier(.53, .1, .12, 1.4);
 }
 
 #social_icons>p:nth-child(1){
