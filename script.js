@@ -1,5 +1,5 @@
 
-var modes = document.getElementById("mode_toggle");
+var modes = document.querySelectorAll(".mode_toggle");
 var indicator = document.getElementById('indicator');
 var about = document.getElementById('about');
 var showabout = document.getElementById('showabout');
@@ -12,7 +12,9 @@ var closeabout = document.getElementById('closeabout');
 
 // load animation end
 
-modes.addEventListener('click', function () {
+modes.forEach(function (element) {
+element.addEventListener('click', function () {
+    console.log("amnoj");
 
     if (document.documentElement.classList.contains('dark'))
     {
@@ -21,7 +23,9 @@ modes.addEventListener('click', function () {
     else {
         document.documentElement.classList.add('dark');
     }
+})    
 })
+
 
 // const initpoi = indicator.getBoundingClientRect().bottom;
 // console.log(initpoi);
