@@ -188,3 +188,16 @@ div .aboutfade.info{
     transform: translateY(-250%) rotateZ(45deg);
     transition: ease-in-out 0.5s all;
 }
+
+#mobilenav{
+    animation: faderight 1s forwards cubic-bezier(.3, .12, .16, .98);
+}
+
+@keyframes faderight {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX();
+    }
+}

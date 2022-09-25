@@ -79,36 +79,36 @@
             </div>
             <div class="mode_toggle md:hidden">
                 <div 
-                    class="fixed right-14 top-4   dark:invert bg-gray-100 dark:bg-gray-100 rounded-full p-2 w-10 select-none  duration-500  ease-in-out  ">
+                    class="fixed left-6 top-5   dark:invert bg-gray-100 dark:bg-gray-100 rounded-full p-2 w-10 select-none  duration-500  ease-in-out  ">
                     <img src="./assets/icons/modes/moon_dark.png" alt="modes">
                 </div>
             </div>
             <!-- mobile screen end here -->
 
-            <nav class="fixed w-screen h-screen hidden md:hidden justify-center items-center backdrop-blur-lg bg-[rgba(0,0,0,0.9)]  z-auto" id="mobilenav">
+            <nav class="fixed right-0 top-0 w-2/4 h-screen hidden md:hidden backdrop-blur-lg bg-[rgba(0,0,0,0.9)]  z-auto " id="mobilenav">
                 
                 <ul
-                    class=" invert   text-xs  flex-col  h-full flex   uppercase items-center justify-around  text-center ">
-                    <li class=" hover:scale-110 hover:rotate-2 transition-rotate  duration-200 ease-in-out"><a
+                    class=" invert   text-xs  flex-col  h-full flex   uppercase items-end justify-start  text-right divide-x-2 mt-16">
+                    <li class=" hover:scale-110 hover:rotate-2 transition-rotate  duration-200 ease-in-out py-2"><a
                             href="#home"
                             onclick="openmobilemenu();"
-                            class="invert dark:invert-0 z-50 px-8 font-normal  hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">home</a>
+                            class=" z-50 pr-6 font-normal   ">home</a>
                     </li>
                     <li
-                        class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out cursor-pointer z-auto">
+                        class="  cursor-pointer z-auto py-2 select-none ">
                         <a href="#" id="aboutmob" onclick="openabout(); openmobilemenu();"
-                            class="invert dark:invert-0 px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">
+                            class=" pr-6 font-medium  select-none">
 
                             about</a>
                     </li>
-                    <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
+                    <li class="  py-2"><a
                             href="#projects"
                             onclick="openmobilemenu();"
-                            class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">projects</a>
+                            class=" pr-6 font-medium ">projects</a>
                     </li>
-                    <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
+                    <li class="  py-2"><a
                             href="#contact"
-                            class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">contact
+                            class=" pr-6  ">contact
                             me</a></li>
                 </ul>
             </nav>
@@ -306,23 +306,29 @@
         </div>
 
         <!-- gallery section -->
-        <div class="w-screen min-h-screen bg-gray-800 px-64">
+        <div class="w-screen min-h-screen  px-64">
             <div class="py-24">
 
 
-                <div class=" grid grid-cols-2 row-span-1  ">
-                <p class="uppercase  leading-[11rem] text-[15rem]  inline-block row-span-1 text-white ">
-                Galle<br>ry
-                </p>
-                <div class="row-span-2 h-[60rem] object-cover bg-gray-50 ">
-                    <img src="./assets/gallery/butterfly.jpg" alt="" class="object-cover h-full">
-                </div>
-                <div class="row-span-1 overflow-hidden h-[38rem] object-center ">
-                    <img src="./assets/gallery/spider.jpg" alt="" class="object-center self-center">
-                </div>
-                <div class="row-span-1 overflow-hidden h-full">
-                    <img src="./assets/gallery/butterfly.jpg" alt="">
-                </div>
+                <div class=" grid grid-cols-2 gap-2 bg-gray-400">
+                    <p class="uppercase  leading-[11rem] text-[15rem]  inline-block row-span-1 text-white tracking-wide ">
+                    Galle<br>ry
+                    </p>
+                    <div class="row-span-2 h-full object-cover overflow-hidden bg-gray-50 ">
+                        <img src="./assets/gallery/butterfly.jpg" alt="" class="object-cover h-full scale-100 hover:scale-125">
+                    </div>
+                    <div class="row-span-1 overflow-hidden h-[38rem]  ">
+                        <img src="./assets/gallery/waterdrop.jpg" alt="" class=" object-cover object-bottom h-full w-full self-center">
+                    </div>
+                    <div class="row-span-2 overflow-hidden h-full">
+                        <img src="./assets/gallery/dragonfly.jpg" alt="">
+                    </div>
+                    <div class="row-span-1 overflow-hidden h-[50%]">
+                        <img src="./assets/gallery/flower.jpg" alt="" class="object-cover object-center h-full w-full ">
+                    </div>
+                    <div class="row-span-1 overflow-hidden h-2/4">
+                        <img src="./assets/gallery/dragonfly.jpg" alt="">
+                    </div>
                 </div>
 
 
