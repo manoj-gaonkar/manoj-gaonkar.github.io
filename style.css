@@ -190,7 +190,8 @@ div .aboutfade.info{
 }
 
 #mobilenav{
-    animation: faderight 1s forwards cubic-bezier(.3, .12, .16, .98);
+    animation: faderight 1s alternate cubic-bezier(.3, .12, .16, .98);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @keyframes faderight {

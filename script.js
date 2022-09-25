@@ -71,6 +71,7 @@ function reveal() {
 //    console.log(reveals.getBoundingClientRect().top) 
 // }, 2000);
 
+$('#mobilenav:contains(hidden)').addClass('');
 
 function openmobilemenu() {
     $('#one').toggleClass('oneanimation');
