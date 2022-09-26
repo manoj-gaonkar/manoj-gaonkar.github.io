@@ -27,9 +27,8 @@
 
 
             <div class="  -z-10 h-36 w-screen " id="home">
-                
-                <header
-                    class=" w-screen  h-36   md:flex flex-row justify-between  hidden  items-center m-auto px-16" >
+
+                <header class=" w-screen  h-36   md:flex flex-row justify-between  hidden  items-center m-auto px-16">
                     <div>
                         <div>
                             <a href="/">
@@ -39,10 +38,10 @@
                     </div>
                     <nav>
                         <ul
-                            class=" invert   text-xs  flex-col md:flex-row h-full  md:flex   uppercase items-center justify-between ">
+                            class="  text-xs  flex-col md:flex-row h-full  md:flex   uppercase items-center justify-between ">
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate  duration-200 ease-in-out"><a
                                     href="#home"
-                                    class="invert dark:invert-0 z-50 px-8 font-normal  hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">home</a>
+                                    class="mix-blend-difference dark:text-rgba('') z-50 px-8 font-normal  hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">home</a>
                             </li>
                             <li
                                 class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out cursor-pointer">
@@ -52,14 +51,17 @@
                             </li>
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
                                     href="#projects"
-                                    class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">projects</a>
+                                    class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider invert dark:invert-0 ">projects</a>
+                            </li>
+                            <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a href="#projects"
+                                    class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">gallery</a>
                             </li>
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
                                     href="#contact"
                                     class="px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">contact
                                     me</a></li>
                             <li class="pl-10 mode_toggle">
-                                <div 
+                                <div
                                     class="invert bg-gray-100 rounded-full p-2 w-10 select-none cursor-move transition-rotate hover:-rotate-45 duration-500  ease-in-out peer-hover:animate-ping">
                                     <img src="./assets/icons/modes/moon_dark.png" alt="modes">
                                 </div>
@@ -72,43 +74,44 @@
             <!-- nav for  mobile -->
 
             <!-- for mobile screen bro -->
-            <div class="fixed right-6 top-6 text-white  flex-col justify-between md:hidden z-50" onclick="openmobilemenu();">
-                <div class="w-6 h-[3px] dark:bg-white bg-gray-700 my-[5px] transition-all ease-in-out duration-500 z-[300] relative " id="one"></div>
-                <div class="w-6 h-[3px] dark:bg-white bg-gray-700 my-[5px] transition-all ease-in-out duration-500 z-[300] relative  " id="two"></div>
-                <div class="w-6 h-[3px] dark:bg-white bg-gray-700 my-[5px] transition-all ease-in-out duration-500 z-[300] relative " id="three"></div>
+            <div class="fixed right-6 top-6 text-white  flex-col justify-between md:hidden z-50"
+                onclick="openmobilemenu();">
+                <div class="w-6 h-[3px] dark:bg-white bg-gray-700 my-[5px] transition-all ease-in-out duration-500 z-[300] relative "
+                    id="one"></div>
+                <div class="w-6 h-[3px] dark:bg-white bg-gray-700 my-[5px] transition-all ease-in-out duration-500 z-[300] relative  "
+                    id="two"></div>
+                <div class="w-6 h-[3px] dark:bg-white bg-gray-700 my-[5px] transition-all ease-in-out duration-500 z-[300] relative "
+                    id="three"></div>
             </div>
             <div class="mode_toggle md:hidden">
-                <div 
+                <div
                     class="fixed left-6 top-5   dark:invert bg-gray-100 dark:bg-gray-100 rounded-full p-2 w-10 select-none  duration-500  ease-in-out  ">
                     <img src="./assets/icons/modes/moon_dark.png" alt="modes">
                 </div>
             </div>
             <!-- mobile screen end here -->
 
-            <nav class="fixed dark:text-gray-800 text-gray-200 right-0 top-0 w-screen h-screen hidden md:hidden  z-auto " id="mobilenav">
-                
+            <nav class="fixed dark:text-gray-800 text-gray-200 right-0 top-0 w-screen h-screen hidden md:hidden  z-auto "
+                id="mobilenav">
+
                 <ul
                     class=" w-2/4   text-sm font-bold  flex-col  h-full flex   uppercase items-end justify-start ml-auto  text-right  pt-16 backdrop-blur-lg dark:bg-[rgba(255,255,255,0.4)] bg-[rgba(0,0,0,0.7)]">
                     <li class=" hover:scale-110 hover:rotate-2 transition-rotate  duration-200 ease-in-out py-2"><a
-                            href="#home"
-                            onclick="openmobilemenu();"
-                            class=" z-50 pr-6  dark:text-gray-800 ">home</a>
+                            href="#home" onclick="openmobilemenu();" class=" z-50 pr-6  dark:text-gray-800 ">home</a>
                     </li>
-                    <li
-                        class="  cursor-pointer z-auto py-2 select-none ">
+                    <li class="  cursor-pointer z-auto py-2 select-none ">
                         <a href="#" id="aboutmob" onclick="openabout(); openmobilemenu();"
-                            class=" pr-6   select-none">
+                            class=" pr-6   select-none ">
 
                             about</a>
                     </li>
-                    <li class="  py-2"><a
-                            href="#projects"
-                            onclick="openmobilemenu();"
+                    <li class="  py-2"><a href="#projects" onclick="openmobilemenu();"
                             class=" pr-6  ">projects</a>
                     </li>
-                    <li class="  py-2"><a
-                            href="#contact"
-                            class=" pr-6  ">contact
+                    <li class="  py-2"><a href="#gallery" onclick="openmobilemenu();"
+                            class=" pr-6 ">gallery</a>
+                    </li>
+                    <li class="  py-2"><a href="#contact" class=" pr-6  ">contact
                             me</a></li>
                 </ul>
             </nav>
@@ -172,17 +175,17 @@
 
         <div class=" w-screen h-auto relative -z-0  " id="projects">
             <div class="flex items-center justify-center min-h-screen w-full break-normal absolute">
-                <h1 class="break-normal font-extralight text-[25rem] relative  text-gray-700 dark:text-gray-500  uppercase    opacity-[0.1] select-none translate-x-[1900px] "
+                <h1 class="break-normal font-extralight text-6xl md:text-[25rem] relative  text-gray-700 dark:text-gray-500  uppercase    opacity-[0.1] select-none translate-x-[1900px] "
                     id="aboutme">Projects</h1>
             </div>
-<span id="indicator"></span>
+            <span id="indicator"></span>
 
             <div class="w-full min-h-screen h-fit py-24 ">
                 <div class=" w-full   text-center ">
-                    <p class="text-4xl  md:text-6xl dark:text-white text-gray-800 mx-auto w-full  uppercase py-4 ">
+                    <p class=" text-4xl  md:text-6xl dark:text-white text-gray-800 mx-auto w-full  uppercase py-4 ">
                         Projects</p>
                 </div>
-                <div class="w-3/4 mx-auto grid grid-cols-1 md:grid-cols-3 mt-10 gap-6 ">
+                <div class="w-3/4 mx-auto grid grid-cols-2 md:grid-cols-3 mt-10 gap-6 ">
                     <!-- project list starts here -->
                     <div
                         class="w-full h-full md:h-64  bg-red-900 overflow-hidden rounded-md group relative object-cover ">
@@ -294,7 +297,7 @@
                                     link
                                 </span>
                             </a>
-                    
+
                         </div>
                     </div>
 
@@ -306,35 +309,44 @@
         </div>
 
         <!-- gallery section -->
-        <div class="w-screen min-h-screen  px-64">
+        <div class="w-screen min-h-screen  px-10 md:px-64">
             <div class="py-24">
 
 
-                <div class=" grid grid-cols-3  grid-rows-6 ">
+                <div class=" grid grid-cols-3 md:grid-cols-3  grid-rows-6 ">
                     <div class=" col-span-1 row-span-1  ">
-                        
+
                     </div>
                     <div class=" row-span-3 group overflow-hidden">
-                        <img src="./assets/newgallery/dragonfly.png" alt="" onmouseenter="textcolor('#66ff66')" class="scale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out w-full h-full">
-                    </div>
-                    <div class=" row-span-2 group overflow-hidden"> 
-                        <img src="./assets/newgallery/book.png" alt="" class="h-fullscale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out" onmouseenter="textcolor('#ffff33')">
+                        <img src="./assets/newgallery/dragonfly.png" alt="" onmouseenter="textcolor('#66ff66')"
+                            class="scale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out w-full h-full object-cover">
                     </div>
                     <div class=" row-span-2 group overflow-hidden">
-                        <img src="./assets/newgallery/flower.png" alt="" class=" h-full scale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out" onmouseenter="textcolor('#ff5c33')">
+                        <img src="./assets/newgallery/book.png" alt=""
+                            class="h-fullscale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out w-full h-full object-cover"
+                            onmouseenter="textcolor('#ffff33')">
                     </div>
-                    
-                    <div id="gallery" class=" row-span-2 uppercase text-[3rem] leading-[150px] flex justify-center items-center text-gray-300 select-none cursor-default  " > 
-                        <span class="">G</span> <span>a</span> <span>l</span> <span>l</span> <span>e</span> <span>r</span> <span class="">y</span>
+                    <div class=" row-span-2 group overflow-hidden">
+                        <img src="./assets/newgallery/flower.png" alt=""
+                            class=" h-full scale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out object-cover"
+                            onmouseenter="textcolor('#ff5c33')">
+                    </div>
+
+                    <div id="gallery"
+                        class=" row-span-2 uppercase text-sm lg:text-[3em] leading-[150px] flex justify-center items-center text-gray-300 select-none cursor-default  ">
+                        Gallery
                     </div>
                     <div class=" row-span-2 group overflow-hidden relative" onmouseenter="textcolor('#26dbfa')">
-                        <img src="./assets/newgallery/waterdrop.png" alt="" class="object-bottom scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out h-full" >
+                        <img src="./assets/newgallery/waterdrop.png" alt=""
+                            class="object-bottom scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out h-full object-cover">
                     </div>
                     <div class=" row-span-3 group overflow-hidden" onmouseenter="textcolor('#7d6b64');">
-                        <img src="./assets/newgallery/ganesha.png" alt="" class="h-full scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out" >
+                        <img src="./assets/newgallery/ganesha.png" alt=""
+                            class="h-full scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out object-cover">
                     </div>
-                    <div class=" row-span-2 group overflow-hidden" onmouseenter="textcolor('#d3d7f8');" >
-                        <img src="./assets/newgallery/spider.png" alt=""  class="h-full scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out">
+                    <div class=" row-span-2 group overflow-hidden" onmouseenter="textcolor('#d3d7f8');">
+                        <img src="./assets/newgallery/spider.png" alt=""
+                            class="h-full scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out object-cover">
                     </div>
                 </div>
 
@@ -346,7 +358,7 @@
 
 
         <!-- title goes here -->
-        
+
     </div>
 
     <!-- about me -->
@@ -388,7 +400,8 @@
         </div>
 
         <div class="fixed top-10 right-10">
-            <span class="material-symbols-outlined scale-125 dark:text-white text-black cursor-pointer click select-none noselect"
+            <span
+                class="material-symbols-outlined scale-125 dark:text-white text-black cursor-pointer click select-none noselect"
                 id="closeabout">
                 close
             </span>
@@ -468,8 +481,8 @@
         })
 
         $('#aboutmob').on('click', function () {
-                $('#showabout').fadeToggle('hidden');
-            })
+            $('#showabout').fadeToggle('hidden');
+        })
 
         $('#closeabout').on('click', function () {
             $('#showabout').fadeToggle('hidden');
