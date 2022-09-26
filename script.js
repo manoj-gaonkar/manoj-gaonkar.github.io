@@ -82,7 +82,9 @@ function openmobilemenu() {
 
 
 
-
+function textcolor(colorcode) {
+    document.getElementById('gallery').style.color = colorcode;
+}
 
 
 
@@ -90,7 +92,39 @@ function openmobilemenu() {
 // custom tailwind config
 tailwind.config = {
     darkMode: 'class',
-      theme: {
+    theme: {
+       keyframes: {
+        spin: {
+            to: {
+            transform: 'rotate(360deg)',
+            },
+        },
+        ping: {
+            '75%, 100%': {
+            transform: 'scale(2)',
+            opacity: '0',
+            },
+        },
+        pulse: {
+            '50%': {
+            opacity: '.5',
+            },
+            },
+        colorhue: {
+            
+            '50%': {
+                color: 'rgb(130,255,120) '
+            }
+            },
+        },
+        animation: {
+        none: 'none',
+        spin: 'spin 1s linear infinite',
+        ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
+        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        bounce: 'bounce 1s infinite',
+        colorhue: 'colorhue 2s infinite',  
+        },
         extend: {
           colors: {
                 back: '#0a090f',
