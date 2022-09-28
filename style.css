@@ -9,6 +9,16 @@ body{
     animation-delay: 0.1s;
 }
 
+#purpleball{
+    transition-timing-function: cubic-bezier(0, .29, .27, .71) ;
+}
+
+/* .bodycontainer {
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    transition: transform 0.5s ease-out;
+} */
+
 .aboutfade.photo{
     animation-timing-function: cubic-bezier(.43, .1, .19, .91);
     animation-delay:0.3s;    

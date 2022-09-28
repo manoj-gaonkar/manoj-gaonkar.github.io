@@ -102,7 +102,24 @@ $('#top-button').click(function () {
     $('body,html').animate({ scrollTop: 0 }, 10, 'swing');
 })
 
+window.addEventListener('mousemove', (e) => {
+    $('#purpleball').fadeIn();
+    $('#purpleball').css('transform', 'translate(' + e.clientX + 'px,' + e.clientY + 'px)');
+    $('#purpleballinner').css('width', e.clientY + 'rem;');
+    $('#purpleballinner').css('height', e.clientY+'rem;');
+})
 
+// w = $(window);
+// b = $('body');
+// c = $('.bodycontainer');
+
+// $(document).ready(function() {
+
+// 	w.scroll(function() {
+// 		c.css('transform','translateY(' + -w.scrollTop() + 'px)');
+// 	});
+
+// });
 
 // custom tailwind config
 tailwind.config = {
@@ -131,13 +148,28 @@ tailwind.config = {
                 color: 'rgb(130,255,120) '
             }
             },
-            top: {
-                '40%': {
-                transform: 'translateY(5px)'
+        top: {
+            from: {
+            transform: 'translateY(100%)'
+            },
+            to: {
+            transform: 'translateY(-100%)'
+        }
+            },
+            redballanimation: {
+                '0%': {
+                  transform:'translate(0%,0%);'  
                 },
-                '80%': {
-                transform: 'translateY(-9px)'
-            }
+                '40%': {
+                  transform:'translate(100%,0%);'  
+                },'70%': {
+                  transform:'translate(50%,-100%);'  
+                    
+                },'100%': {
+                  transform:'translate(0%,0%);'  
+
+                },
+            
         }
         },
         animation: {
@@ -147,7 +179,8 @@ tailwind.config = {
         pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         bounce: 'bounce 1s infinite',
         colorhue: 'colorhue 2s infinite',  
-        top: ' top 3s infinite cubic-bezier(.85,-0.43,.46,.92)'
+        top: ' top 1s infinite cubic-bezier(.11,.77,.86,.19)',
+        redballanimation: 'redballanimation 8s infinite '
         },
         extend: {
           colors: {
