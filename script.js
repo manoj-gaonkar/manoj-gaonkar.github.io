@@ -12,9 +12,26 @@ var closeabout = document.getElementById('closeabout');
 
 // load animation end
 
+$(window).on('load', function () {
+setTimeout(function () {
+    $('.load-wrapper').fadeToggle('hidden');
+}, 1300)
+});
+
+$('#about').on('click', function () {
+    $('#showabout').fadeToggle('hidden');
+})
+
+$('#aboutmob').on('click', function () {
+    $('#showabout').fadeToggle('hidden');
+})
+
+$('#closeabout').on('click', function () {
+    $('#showabout').fadeToggle('hidden');
+})
+
 modes.forEach(function (element) {
 element.addEventListener('click', function () {
-    console.log("amnoj");
 
     if (document.documentElement.classList.contains('dark'))
     {
@@ -86,6 +103,7 @@ function textcolor(colorcode) {
     document.getElementById('gallery').style.color = colorcode;
 }
 
+$('#top-button').hide();
 
 $(document).scroll(function () {
     if ($(this).scrollTop() > 200){
@@ -98,15 +116,21 @@ $(document).scroll(function () {
 })
 
 $('#top-button').click(function () {
-    console.log("jdkj");
     $('body,html').animate({ scrollTop: 0 }, 10, 'swing');
 })
 
 window.addEventListener('mousemove', (e) => {
     $('#purpleball').fadeIn();
     $('#purpleball').css('transform', 'translate(' + e.clientX + 'px,' + e.clientY + 'px)');
-    $('#purpleballinner').css('width', e.clientY + 'rem;');
-    $('#purpleballinner').css('height', e.clientY+'rem;');
+})
+
+$('#sayhellobutton').click(function () {
+    $('#sayhellocontainer').fadeToggle(0,'hidden');    
+    $('.sayhellocontainer').toggleClass('-translate-x-96');    
+    $('.sayhellocontainer').fadeToggle('hidden');    
+    $('#formelement').fadeToggle('hidden');
+
+
 })
 
 // w = $(window);

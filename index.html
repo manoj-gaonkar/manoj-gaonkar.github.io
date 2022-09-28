@@ -46,7 +46,7 @@
                             </li>
                             <li
                                 class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out cursor-pointer">
-                                <a href="#" id="about" onclick="openabout();"
+                                <a href="#" id="about" 
                                     class="mix-blend-difference dark:text-[rgb(255,255,255)] px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider">
                                     about</a>
                             </li>
@@ -101,7 +101,7 @@
                             href="#home" onclick="openmobilemenu();" class=" z-50 pr-6  dark:text-gray-800 ">home</a>
                     </li>
                     <li class="  cursor-pointer z-auto py-2 select-none ">
-                        <a href="#" id="aboutmob" onclick="openabout(); openmobilemenu();"
+                        <a href="#" id="aboutmob" onclick="openmobilemenu();"
                             class=" pr-6   select-none ">
 
                             about</a>
@@ -363,10 +363,38 @@
         </div> -->
 
         <!-- contact me start -->
-        <div class="flex justify-center items-center w-screen h-screen bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-transparent dark:bg-gradient-to-t dark:from-[rgba(255,255,255,0.9)] dark:to-transparent p-14 md:p-64 relative z-10 ">
-            <div class=" flex flex-col justify-center items-center  w-full ">
-                <p class=" text-4xl md:text-6xl py-10 w-full text-center">Hey there!</p>
-                <button class=" px-3 py-1 md:px-6 md:py-3 bg-transparent border-2 border-white text-center rounded text-white hover:text-gray-700 hover:bg-white hover:border-transparent ">Say Hello!</button>
+        <div class=" flex justify-center items-center w-screen h-screen bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-transparent dark:bg-gradient-to-t dark:from-[rgba(255,255,255,0.5)] dark:to-transparent p-14 md:p-64 relative z-10 ">
+            <div class="text-[20rem] text-[rgba(255,255,255,0.1)] absolute -z-0 font-bold select-none  ">
+                Connect
+            </div>
+            <div  class=" w-2/4  flex-col  justify-center items-center  overflow-hidden  relative z-10 " id="sayhellocontainer">
+                <p  class="sayhellocontainer transition-all duration-500 ease-in-out text-4xl md:text-6xl py-10 w-full text-center font-normal">Hey there!</p>
+                <button class="self-center sayhellocontainer transition-all duration-500 ease-in  px-3 py-1 md:px-6 md:py-3 bg-transparent border-2 border-white text-center rounded text-white hover:text-gray-700 hover:bg-white hover:border-transparent  " id="sayhellobutton">Say Hello!</button>
+            </div>
+            <div class=" w-3/4 lg:w-2/4 relative overflow-hidden  z-10  transition-all duration-500 ease-out delay-300 hidden" id="formelement">
+                <form action=" " name="submit-to-google-sheet" >
+                    <div class="w-full  ">
+                        <label class="block text-white">Name:</label>
+                        <input type="text" class=" w-full outline-none bg-transparent border-b text-white peer p-3" name="Name" placeholder="name">
+                        <hr class="w-0 peer-focus:w-full transition-all ease-out duration-500 ">
+                    </div>
+                    <div class="formelement mt-6  transition-all duration-500 ease-in-out" >
+                        <label class="block text-white">Email:</label>
+                        <input type="email" class=" w-full outline-none bg-transparent border-b text-white peer p-3" name="Email" placeholder="email">
+                        <hr class="w-0 peer-focus:w-full transition-all ease-out duration-500 ">
+                    </div>
+                    <div class="formelement mt-6 transition-all duration-500 ease-in-out">
+                        <label class="block text-white">Message:</label>
+                        <input type="text" class="h-fit  w-full outline-none bg-transparent border-b text-white peer p-3" name="Message" placeholder="message">
+                        <hr class="w-0 peer-focus:w-full transition-all ease-out duration-500 ">
+                    </div>
+                    <div class="formelement  transition-all duration-500 ease-in-out">
+                    <button class="px-4 py-2 my-4 bg-[rgba(255,255,255,0.5)] rounded " type="submit" >Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div id="thankyoumessage" class=" absolute left-2/4 top-2/4 translate-x-[-50%] translate-y-[-50%] hidden">
+                <p class="text-sm text-gray-200 md:text-4xl ">Thank You for contacting me!</p>
             </div>
         </div>
         <!-- contact me -->
@@ -480,7 +508,7 @@
     </div>
 
 
-    <div class="fixed right-6 bottom-6 p-5 w-10 h-10 flex justify-center items-center rounded  cursor-pointer z-50 bg-gray-700 dark:bg-white overflow-hidden" id="top-button">
+    <div class="fixed  right-6 bottom-6 p-5 w-10 h-10  flex justify-center items-center rounded  cursor-pointer z-50 bg-gray-700 dark:bg-white overflow-hidden" id="top-button">
         <span class="material-symbols-outlined animate-top text-white dark:text-black ">
             expand_less
         </span>
@@ -499,23 +527,21 @@
     <!-- but me end -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $(window).on('load', function () {
-            setTimeout(function () {
-                $('.load-wrapper').fadeToggle('hidden');
-            }, 1300)
-        });
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzFNIojiI0QmEvtKqY3uVAGgvzvaTyNpdcxMwgkA6hqyDa-I3U6GHl6EmzbgOgOFpmreA/exec'
+            const form = document.forms['submit-to-google-sheet']
 
-        $('#about').on('click', function () {
-            $('#showabout').fadeToggle('hidden');
-        })
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        $('#formelement').fadeToggle('hidden');
+                        setTimeout(()=>{
+                        $('#thankyoumessage').fadeToggle('hidden');
 
-        $('#aboutmob').on('click', function () {
-            $('#showabout').fadeToggle('hidden');
-        })
-
-        $('#closeabout').on('click', function () {
-            $('#showabout').fadeToggle('hidden');
-        })
+                        },200)
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
     </script>
     <script src="./script.js"></script>
 
