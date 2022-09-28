@@ -87,6 +87,21 @@ function textcolor(colorcode) {
 }
 
 
+$(document).scroll(function () {
+    if ($(this).scrollTop() > 200){
+        $('#top-button').fadeIn();
+    }
+    else {
+        $('#top-button').fadeOut();
+    }
+    
+})
+
+$('#top-button').click(function () {
+    console.log("jdkj");
+    $('body,html').animate({ scrollTop: 0 }, 10, 'swing');
+})
+
 
 
 // custom tailwind config
@@ -116,6 +131,14 @@ tailwind.config = {
                 color: 'rgb(130,255,120) '
             }
             },
+            top: {
+                '40%': {
+                transform: 'translateY(5px)'
+                },
+                '80%': {
+                transform: 'translateY(-9px)'
+            }
+        }
         },
         animation: {
         none: 'none',
@@ -124,6 +147,7 @@ tailwind.config = {
         pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         bounce: 'bounce 1s infinite',
         colorhue: 'colorhue 2s infinite',  
+        top: ' top 3s infinite cubic-bezier(.85,-0.43,.46,.92)'
         },
         extend: {
           colors: {
