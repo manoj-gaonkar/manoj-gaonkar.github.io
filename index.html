@@ -54,7 +54,7 @@
                                     href="#projects"
                                     class="mix-blend-difference dark:text-[rgb(255,255,255)] px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider  ">projects</a>
                             </li>
-                            <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a href="#projects"
+                            <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a href="#gallerytop"
                                     class="mix-blend-difference dark:text-[rgb(255,255,255)] px-8 font-medium hover:font-bold transition-tracking duration-200 ease-in-out tracking-widest hover:tracking-morewider ">gallery</a>
                             </li>
                             <li class=" hover:scale-110 hover:rotate-2 transition-rotate duration-200 ease-in-out"><a
@@ -175,8 +175,8 @@
         <!-- second container about me -->
 
         <div class=" w-screen h-auto relative -z-0  " id="projects">
-            <div class="flex items-center justify-center min-h-screen w-full break-normal absolute">
-                <h1 class="break-normal font-extralight text-6xl md:text-[25rem] relative  text-gray-700 dark:text-gray-500  uppercase    opacity-[0.1] select-none translate-x-[1900px] "
+            <div class="flex items-start justify-start min-h-screen w-full break-normal absolute">
+                <h1 class="break-normal font-extralight text-6xl md:text-[25rem] relative  text-gray-700 dark:text-gray-500  uppercase    opacity-[0.1] select-none translate-x-[1800px] "
                     id="aboutme">Projects</h1>
             </div>
             <span id="indicator"></span>
@@ -189,7 +189,7 @@
                 <div class="w-3/4 mx-auto grid grid-cols-2 md:grid-cols-3 mt-10 gap-6 ">
                     <!-- project list starts here -->
                     <div
-                        class="w-full h-full md:h-64  bg-red-900 overflow-hidden rounded-md group relative object-cover ">
+                        class="w-full h-full md:h-64  bg-red-900 overflow-hidden rounded-md group relative object-cover shadow-md ">
                         <img src="./assets/projects/google-clone.png" alt=""
                             class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out object-cover w-full h-full">
                         <div
@@ -209,7 +209,7 @@
 
 
 
-                    <div class="w-full h-fit md:h-64  overflow-hidden rounded-md group relative">
+                    <div class="w-full h-fit md:h-64  overflow-hidden rounded-md group relative shadow-md">
                         <img src="./assets/projects/imagegallery.png" alt=""
                             class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full object-cover w-full">
                         <div
@@ -229,7 +229,7 @@
 
 
 
-                    <div class="w-full h-fit md:h-64 overflow-hidden rounded-md group relative">
+                    <div class="w-full h-fit md:h-64 overflow-hidden rounded-md group relative shadow-md">
                         <img src="./assets/projects/todolist.png" alt=""
                             class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full object-cover w-full">
                         <div
@@ -247,7 +247,7 @@
                         </div>
                     </div>
 
-                    <div class="w-full h-fit md:h-64  overflow-hidden rounded-md group relative">
+                    <div class="w-full h-fit md:h-64  overflow-hidden rounded-md group relative shadow-md">
                         <img src="./assets/projects/rps.png" alt=""
                             class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full object-cover w-full">
                         <div
@@ -266,7 +266,7 @@
                     </div>
 
 
-                    <div class="w-full h-fit md:h-64  overflow-hidden rounded-md group relative">
+                    <div class="w-full h-fit md:h-64  overflow-hidden rounded-md group relative shadow-md">
                         <img src="./assets/projects/weatherapp.png" alt=""
                             class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full  object-cover w-full origin-top ">
                         <div
@@ -284,7 +284,7 @@
                         </div>
                     </div>
 
-                    <div class="w-full h-fit md:h-64  overflow-hidden rounded-md group relative">
+                    <div class="w-full h-fit md:h-64  overflow-hidden rounded-md group relative shadow-md">
                         <img src="./assets/projects/foodie.png" alt="#"
                             class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full w-full object-cover">
                         <div
@@ -314,40 +314,40 @@
             <div class="py-24">
 
 
-                <div class=" grid grid-cols-3 md:grid-cols-3  grid-rows-6 ">
+                <div class=" grid grid-cols-3 md:grid-cols-3  grid-rows-6 " oncontextmenu="return false;">
                     <div class=" col-span-1 row-span-1  ">
 
                     </div>
                     <div class=" row-span-3 group overflow-hidden">
                         <img src="./assets/newgallery/dragonfly.png" alt="" onmouseenter="textcolor('#66ff66')"
-                            class="scale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out w-full h-full object-cover">
+                            class="scale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out w-full h-full object-cover" draggable="false">
                     </div>
                     <div class=" row-span-2 group overflow-hidden">
                         <img src="./assets/newgallery/book.png" alt=""
                             class="h-fullscale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out w-full h-full object-cover"
-                            onmouseenter="textcolor('#ffff33')">
+                            onmouseenter="textcolor('#ffff33')" draggable="false">
                     </div>
                     <div class=" row-span-2 group overflow-hidden">
-                        <img src="./assets/newgallery/flower.png" alt=""
-                            class=" h-full scale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out object-cover"
-                            onmouseenter="textcolor('#ff5c33')">
+                        <img src="./assets/newgallery/flower.png" alt="" id="gallerytop"
+                            class=" h-full w-full scale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out object-cover"
+                            onmouseenter="textcolor('#ff5c33')" draggable="false">
                     </div>
 
                     <div id="gallery"
-                        class=" row-span-2 uppercase text-sm lg:text-[3em] leading-[150px] flex justify-center items-center text-gray-300 select-none cursor-default  ">
+                        class=" rounded row-span-2 uppercase text-sm lg:text-[3em] leading-[150px] flex justify-center items-center text-gray-300 select-none cursor-default  ">
                         Gallery
                     </div>
                     <div class=" row-span-2 group overflow-hidden relative" onmouseenter="textcolor('#26dbfa')">
                         <img src="./assets/newgallery/waterdrop.png" alt=""
-                            class="object-bottom scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out h-full object-cover">
+                            class="object-bottom scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out h-full object-cover " draggable="false">
                     </div>
                     <div class=" row-span-3 group overflow-hidden" onmouseenter="textcolor('#7d6b64');">
                         <img src="./assets/newgallery/ganesha.png" alt=""
-                            class="h-full scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out object-cover">
+                            class="h-full scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out object-cover" draggable="false">
                     </div>
                     <div class=" row-span-2 group overflow-hidden" onmouseenter="textcolor('#d3d7f8');">
                         <img src="./assets/newgallery/spider.png" alt=""
-                            class="h-full scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out object-cover">
+                            class="h-full scale-100 group-hover:scale-110 group-hover:skew-y-2 transition-all duration-500 ease-out object-cover" draggable="false">
                     </div>
                 </div>
 
@@ -356,11 +356,18 @@
         </div>
         <!-- gallery section ends here -->
 
-        <div class="">
+        <!-- <div class="">
             <iframe src="https://drive.google.com/file/d/1bhXyNfAqXMkapeqWDzVtFVAY3N16EyBp/preview" width="640" height="480"
-                allow="autoplay" class="bg-gray-300"></iframe>
-        </div>
+                allow="autoplay" class="bg-transparent mx-auto" loading="lazy" allowfullscreen="false" ></iframe>
+        </div> -->
 
+        <!-- contact me start -->
+        <div class="flex justify-center items-center w-screen h-screen bg-gray-400 p-64 ">
+            <div>
+                
+            </div>
+        </div>
+        <!-- contact me -->
 
 
         <!-- title goes here -->
@@ -418,7 +425,7 @@
             <div class="flex flex-col  justify-start items-center w-full " id="social_icons">
                 <!-- linkedin -->
                 <p class="py-2 transition-all duration-300 hover:-translate-y-2 opacity-60 hover:opacity-100">
-                    <a href="https://www.linkedin.com/in/manoj-gaonkar/" target="_blank" class="inline-block">
+                    <a href="https://www.linkedin.com/in/manoj-gaonkar/" target="_blank" class="inline-block" title="linkedin">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" stroke-width="2"
                             viewBox="0 0 50 50" class="h-8 p-1 self-center  stroke-black dark:stroke-white">
                             <path
@@ -426,10 +433,10 @@
                             </path>
                         </svg>
                     </a>
-                    <p />
-                    <!-- github -->
+                <p/>
+                <!-- github -->
                 <p class="py-2 transition-all duration-300 hover:-translate-y-2 opacity-60 hover:opacity-100">
-                    <a href="https://github.com/manoj-gaonkar" target="_blank" class="inline-block">
+                    <a href="https://github.com/manoj-gaonkar" target="_blank" class="inline-block" title="github">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-github h-8  p-1 self-center dark:stroke-white stroke-black">
@@ -441,7 +448,7 @@
                     </a>
                 </p>
                 <!-- instagram -->
-                <p class=" py-2 transition-all duration-300 hover:-translate-y-2 opacity-60 hover:opacity-100">
+                <p class=" py-2 transition-all duration-300 hover:-translate-y-2 opacity-60 hover:opacity-100" title="instagram">
                     <a href="https://www.instagram.com/manoj_g777/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -455,7 +462,7 @@
                 </p>
                 <!-- twitter -->
                 <p class="py-2 transition-all duration-300 hover:-translate-y-2 opacity-60 hover:opacity-100">
-                    <a href="https://twitter.com/ManojGaonkar20" target="_blank">
+                    <a href="https://twitter.com/ManojGaonkar20" target="_blank" title="twitter">
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-twitter h-8 p-1  stroke-black dark:stroke-white">
