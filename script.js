@@ -124,13 +124,9 @@ window.addEventListener('mousemove', (e) => {
     $('#purpleball').css('transform', 'translate(' + e.clientX + 'px,' + e.clientY + 'px)');
 })
 
-$('#sayhellobutton').click(function () {
-    $('#sayhellocontainer').fadeToggle(0,'hidden');    
-    $('.sayhellocontainer').toggleClass('-translate-x-96');    
-    $('.sayhellocontainer').fadeToggle('hidden');    
-    $('#formelement').fadeToggle('hidden');
-
-
+$('#sayhellobutton').click(() => {
+    $('#messageinput').val('Hello .');
+    
 })
 
 // w = $(window);
@@ -206,6 +202,36 @@ tailwind.config = {
         top: ' top 1s infinite cubic-bezier(.11,.77,.86,.19)',
         redballanimation: 'redballanimation 8s infinite '
         },
+        fontFamily: {
+      sans: [
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        '"Noto Sans"',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"',
+        '"Poppins"',
+      ],
+      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      mono: [
+        'ui-monospace',
+        'SFMono-Regular',
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        '"Liberation Mono"',
+        '"Courier New"',
+        'monospace',
+      ],
+    },
         extend: {
           colors: {
                 back: '#0a090f',
