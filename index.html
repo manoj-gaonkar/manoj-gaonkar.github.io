@@ -15,9 +15,9 @@
 </head>
 
 <body class=" relative overflow-x-hidden bodycontainer" id="scrtop">
-    <!-- <div class="load-wrapper  fixed top-0 left-0">
+    <div class="load-wrapper  fixed top-0 left-0">
         <div class="ok "></div> 
-    </div> -->
+    </div>
     <!-- loading wrapper -->
     <!-- main container has everything beginning -->
     <div class=" static w-screen   bg-gray-50 dark:bg-[rgb(0,0,0)]  overflow-hidden  ">
@@ -309,11 +309,11 @@
 
         <span id="indicator"></span>
         <!-- gallery section -->
-        <div class="w-screen md:min-h-screen  px-10 md:px-64 relative z-10">
+        <div class="w-screen md:min-h-screen  px-10 md:px-64 relative z-10" id="gallerytop">
             <div class="py-24">
 
 
-                <div class=" grid grid-cols-3 md:grid-cols-3  grid-rows-6 " oncontextmenu="return false;">
+                <div class=" grid grid-cols-3 md:grid-cols-3  grid-rows-6 " oncontextmenu="return false;" >
                     <div class=" col-span-1 row-span-1  ">
 
                     </div>
@@ -328,7 +328,7 @@
                             onmouseenter="textcolor('#ffff33')" draggable="false">
                     </div>
                     <div class=" row-span-2 group overflow-hidden">
-                        <img src="./assets/newgallery/flower.png" alt="" id="gallerytop"
+                        <img src="./assets/newgallery/flower.png" alt="" 
                             class=" h-full w-full scale-100 group-hover:scale-110 group-hover:-skew-y-2 transition-all duration-500 ease-out object-cover"
                             onmouseenter="textcolor('#ff5c33')" draggable="false">
                     </div>
@@ -366,13 +366,14 @@
 
         <!-- contact me start -->
         <div
+            id="contact"
             class="font-['Oswald',sans-serif;] flex flex-col justify-center items-center md:flex md:flex-row  md:justify-center md:items-start w-screen h-screen bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-transparent dark:bg-gradient-to-t dark:from-[rgba(255,255,255,0.5)] dark:to-transparent p-14 md:p-64 relative z-10 ">
             <div
-                class="  formelement md:text-[20rem] opacity-25 font-['Oswald',sans-serif;] text-[rgba(255,255,255,0.1)] absolute -z-0 font-bold select-none  ">
+                class=" left-2/4 bottom-2/4 translate-x-[-50%] translate-y-[50%] formelement md:text-[20rem] opacity-25 font-['Oswald',sans-serif;] text-[rgba(255,255,255,0.1)] absolute -z-0 font-bold select-none  ">
                 Connect
             </div>
             <div
-                class="formelement w-full md:w-1/4 flex-col justify-center items-center md:justify-start md:items-end text-center md:text-right md:h-full md:pr-3 relative z-10 pb-10 ">
+                class="formelement w-full md:w-1/4 flex-col justify-center items-center md:justify-start md:items-end text-center md:text-right md:h-full md:pr-4 relative z-10 pb-10 ">
                 <p class="text-5xl md:text-8xl pb-10 md:pb-3 font-normal text-white text-center md:text-right  ">yeH<br class="hidden md:visible"> there!
                 </p>
                 <button id="sayhellobutton"
@@ -380,7 +381,7 @@
                     Hello!</button>
             </div>
             <div
-                class=" formelement md:pl-5 w-full md:w-3/4 lg:w-2/4 relative   z-10  transition-all duration-500 ease-out delay-300 md:border-l-2 ">
+                class=" formelement md:pl-5 w-full md:w-3/4 lg:w-2/4 relative md:pt-3  z-10  transition-all duration-500 ease-out delay-300 md:border-l-2 ">
                 <form action=" " name="submit-to-google-sheet" id="form">
                     <div class="w-full  ">
                         <label class="block text-white">Name:</label>
@@ -404,7 +405,7 @@
                         <hr class="w-0 peer-focus:w-full transition-all ease-out duration-500 ">
                     </div>
                     <div class="  transition-all duration-500 ease-in-out">
-                        <button class="px-4 py-2 my-4 bg-[rgba(255,255,255,1)] rounded " type="submit">Submit</button>
+                        <button class="px-4 py-2 my-4 bg-[rgba(255,255,255,1)] border-2 border-transparent rounded md:hover:bg-transparent md:hover:border-2 md:hover:border-white md:hover:text-white" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
@@ -539,7 +540,7 @@
     </div>
     <div class=" fixed -left-64 -top-64 -z-0 origin-center hidden md:hidden blur-[150px] transition-all duration-1000 ease-out "
         id="purpleball">
-        <div class="w-[35rem] h-[35rem]  rounded-full bg-purple-500  bg-blend-overlay mix-blend-difference opacity-20 "
+        <div class="w-[35rem] h-[35rem]  rounded-full bg-purple-500  bg-blend-overlay mix-blend-difference opacity-30 "
             id="purpleballinner"></div>
     </div>
     <!-- end of balls movin -->
