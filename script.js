@@ -30,15 +30,20 @@ $('#closeabout').on('click', function () {
     $('#showabout').fadeToggle('hidden');
 })
 
+$('#modedesktop').attr('src', "./assets/icons/modes/moon_dark.png");
+$('#modephone').attr('src', "./assets/icons/modes/moon_dark.png");
 modes.forEach(function (element) {
 element.addEventListener('click', function () {
-
     if (document.documentElement.classList.contains('dark'))
     {
         document.documentElement.classList.remove('dark');
+        $('#modedesktop').attr('src', "./assets/icons/modes/light_mode.png");
+        $('#modephone').attr('src', "./assets/icons/modes/light_mode.png");
     }
     else {
         document.documentElement.classList.add('dark');
+        $('#modedesktop').attr('src', "./assets/icons/modes/moon_dark.png");
+        $('#modephone').attr('src', "./assets/icons/modes/moon_dark.png");
     }
 })    
 })
