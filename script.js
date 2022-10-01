@@ -2,6 +2,7 @@
 var modes = document.querySelectorAll(".mode_toggle");
 var indicator = document.getElementById('indicator');
 var about = document.getElementById('about');
+var projects = document.querySelectorAll('#aboutme');
 var showabout = document.getElementById('showabout');
 var closeabout = document.getElementById('closeabout');
 
@@ -96,6 +97,10 @@ function reveal() {
 $('#mobilenav:contains(hidden)').addClass('');
 
 function openmobilemenu() {
+    if (!document.documentElement.classList.contains('dark')) {
+        
+        $('.menu').css('background-color', "white");
+    }
     $('#one').toggleClass('oneanimation');
     $('#two').toggleClass('twoanimation');
     $('#three').toggleClass('threeanimation');
@@ -134,6 +139,8 @@ $('#sayhellobutton').click(() => {
     
 })
 
+
+
 // w = $(window);
 // b = $('body');
 // c = $('.bodycontainer');
@@ -150,6 +157,13 @@ $('#sayhellobutton').click(() => {
 tailwind.config = {
     darkMode: 'class',
     theme: {
+        screens: {
+          sm: '640px',
+          md: '768px',
+          xl: '1024px',
+          lg: '1280px',
+          '2xl': '1536px',
+        },
         keyframes: {
         bounce: {
         '0%, 100%': {
