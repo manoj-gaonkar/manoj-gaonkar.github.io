@@ -13,6 +13,33 @@ var closeabout = document.getElementById('closeabout');
 
 // load animation end
 
+// navanimation scroll
+var lastScroll = 0;
+
+$(window).scroll(() => {
+    var currentScroll = $(document).scrollTop();
+    $('#home').addClass('navanimation');
+    if ($(document).scrollTop() <= 10 && $('#home').hasClass('h-[5rem]') ) {
+        // $('#home').removeClass('navanimation');
+        $('#home').removeClass('h-[5rem]');
+        $('#home').addClass('h-[9rem]');
+        $('#home').css('box-shadow','none');
+        console.log("navup")
+    }
+    else  {
+        $('#home').addClass('h-[5rem]');
+    }
+    if(currentScroll > lastScroll && !$('#home').hasClass('scroll-up')){
+        $('#home').addClass('scroll-up');
+        $('#home').removeClass('scroll-down');
+    }
+    if(currentScroll < lastScroll && $('#home').hasClass('scroll-up')) {
+        $('#home').addClass('scroll-down');
+        $('#home').removeClass('scroll-up');
+    }
+    lastScroll = currentScroll;
+})
+
 $(window).on('load', function () {
 setTimeout(function () {
     $('.load-wrapper').fadeToggle('hidden');

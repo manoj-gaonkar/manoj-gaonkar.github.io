@@ -10,6 +10,18 @@ body{
     animation-delay: 0.1s;
 }
 
+.navanimation{
+    transition: all ease-in-out 0.5s;
+}
+
+.scroll-up{
+    transform: translate3d(0,-100%,0);
+    box-shadow: 2px 0 10px  ;
+}
+.scroll-down {
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+}
+
 #purpleball{
     transition-timing-function: cubic-bezier(0, .29, .27, .71) ;
 }
