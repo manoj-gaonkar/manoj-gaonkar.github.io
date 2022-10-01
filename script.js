@@ -161,7 +161,7 @@ tailwind.config = {
           sm: '640px',
           md: '768px',
           xl: '1024px',
-          lg: '1280px',
+          lg: '1282px',
           '2xl': '1536px',
         },
         keyframes: {
