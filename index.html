@@ -22,7 +22,7 @@
     <!-- main container has everything beginning -->
 
 
-    <div class="top-0 left-0 z-[100] h-[9rem] w-screen transition-all duration-500 ease-in-out hidden md:block fixed h-[9rem]" id="home">
+    <div class="top-0 left-0 z-[100] h-[9rem] w-screen transition-all duration-500 ease-in-out hidden md:block fixed backdr " id="home">
     
         <header class=" w-screen  h-full    md:flex flex-row justify-between  hidden  items-center m-auto px-16">
             <div>
@@ -434,7 +434,7 @@
                         <hr class="w-0 peer-focus:w-full transition-all ease-out duration-500 ">
                     </div>
                     <div class="  transition-all duration-500 ease-in-out">
-                        <button class="px-4 py-2 my-4 bg-[rgba(255,255,255,1)] border-2 border-transparent rounded md:hover:bg-transparent md:hover:border-2 md:hover:border-white md:hover:text-white" type="submit">Submit</button>
+                        <button class="px-4 py-2 my-4 bg-[rgba(255,255,255,1)] border-2 border-transparent rounded md:hover:bg-transparent md:hover:border-2 md:hover:border-white md:hover:text-white " type="submit" id="contactsubmitbutton" >Submit</button>
                     </div>
                 </form>
             </div>
@@ -582,6 +582,7 @@
         const form = document.forms['submit-to-google-sheet']
 
         form.addEventListener('submit', e => {
+            document.getElementById("contactsubmitbutton").disabled = true;
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {

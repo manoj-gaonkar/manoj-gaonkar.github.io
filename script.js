@@ -28,6 +28,7 @@ $(window).scroll(() => {
     }
     else  {
         $('#home').addClass('h-[5rem]');
+        $('#home').addClass('backdrop-blur');
     }
     if(currentScroll > lastScroll && !$('#home').hasClass('scroll-up')){
         $('#home').addClass('scroll-up');
