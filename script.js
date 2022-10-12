@@ -24,7 +24,6 @@ $(window).scroll(() => {
         $('#home').removeClass('h-[5rem]');
         $('#home').addClass('h-[9rem]');
         $('#home').css('box-shadow','none');
-        console.log("navup")
     }
     else  {
         $('#home').addClass('h-[5rem]');
@@ -94,12 +93,12 @@ window.addEventListener('scroll', reveal)
 
 function reveal() {
     var reveals = document.querySelectorAll('.reveal');
-
+    
     for (var i = 0; i < reveals.length; i++) {
         var winh = window.innerHeight;
         var eleh = reveals[i].getBoundingClientRect().top;
         var revh = 130;
-
+        
         if (eleh < winh - revh) {
             reveals[i].classList.add('activate');
         }
@@ -125,9 +124,12 @@ function reveal() {
 $('#mobilenav:contains(hidden)').addClass('');
 
 function openmobilemenu() {
-    if (!document.documentElement.classList.contains('dark')) {
+    if (document.documentElement.classList.contains('dark')) {
         
         $('.menu').css('background-color', "white");
+    }
+    else{
+    $('.menu').css('background-color', "black");
     }
     $('#one').toggleClass('oneanimation');
     $('#two').toggleClass('twoanimation');
