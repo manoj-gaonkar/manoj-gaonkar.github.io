@@ -14,6 +14,15 @@ The website is built using the following technologies:
 
 ## Project Structure
 
+├── assets <br />
+│   ├── css <br />
+│   │   ├── main.css <br />
+│   ├── fonts <br />
+│   ├── img <br />
+│   ├── js <br />
+│   │   ├── main.js <br />
+├── index.html <br />
+├── README.md <br />
 
 
 - The `assets` directory contains all the assets (CSS, JavaScript, images, and fonts) used in the website.
