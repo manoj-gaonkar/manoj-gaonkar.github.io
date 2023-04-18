@@ -26,6 +26,12 @@ body{
     transition-timing-function: cubic-bezier(0, .29, .27, .71) ;
 }
 
+#purpleballinner{
+    width: 10rem;
+    height: 10rem;
+    transform: scale(1);
+    transition: ease-in-out all 0.7s ;
+}
 /* .bodycontainer {
     transform: translate3d(0, 0, 0);
     will-change: transform;

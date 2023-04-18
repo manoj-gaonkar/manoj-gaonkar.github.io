@@ -159,9 +159,18 @@ $('#top-button').click(function () {
     $('body,html').animate({ scrollTop: 0 }, 10, 'swing');
 })
 
+var timeout;
 window.addEventListener('mousemove', (e) => {
     $('#purpleball').fadeIn();
     $('#purpleball').css('transform', 'translate(' + e.clientX + 'px,' + e.clientY + 'px)');
+    $('#purpleballinner').css('transform','scale(2)');
+    $('#purpleballinner').css('transform','scale(2)');
+    clearTimeout(timeout);
+    timeout = setTimeout(()=>{
+        $('#purpleballinner').css('transform','scale(1)');
+        $('#purpleballinner').css('transform','scale(1)');
+    },100)
+
 })
 
 $('#sayhellobutton').click(() => {
