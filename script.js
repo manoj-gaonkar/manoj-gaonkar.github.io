@@ -40,11 +40,11 @@ $(window).scroll(() => {
     lastScroll = currentScroll;
 })
 
-$(window).on('load', function () {
-setTimeout(function () {
-    $('.load-wrapper').fadeToggle('hidden');
-}, 5000)
-});
+// $(window).on('load', function () {
+// setTimeout(function () {
+//     $('.load-wrapper').fadeToggle('hidden');
+// }, 5000)
+// });
 
 $('#about').on('click', function () {
     $('#showabout').fadeToggle('hidden');
@@ -67,11 +67,14 @@ element.addEventListener('click', function () {
         document.documentElement.classList.remove('dark');
         $('#modedesktop').attr('src', "./assets/icons/modes/light_mode.png");
         $('#modephone').attr('src', "./assets/icons/modes/light_mode.png");
+        $('.menu').css('background-color', "black");
     }
     else {
         document.documentElement.classList.add('dark');
         $('#modedesktop').attr('src', "./assets/icons/modes/moon_dark.png");
         $('#modephone').attr('src', "./assets/icons/modes/moon_dark.png");
+        $('.menu').css('background-color', "white");
+
     }
 })    
 })
@@ -124,12 +127,17 @@ function reveal() {
 $('#mobilenav:contains(hidden)').addClass('');
 
 function openmobilemenu() {
+    
     if (document.documentElement.classList.contains('dark')) {
-        
-        $('.menu').css('background-color', "white");
+            $('.menu').css('background-color', "white");
     }
     else{
-    $('.menu').css('background-color', "black");
+        if($('#mobilenav').css('display') == "none"){
+            $('.menu').css('background-color', "white");
+        }
+        else{
+            $('.menu').css('background-color', "black");
+        }
     }
     $('#one').toggleClass('oneanimation');
     $('#two').toggleClass('twoanimation');
