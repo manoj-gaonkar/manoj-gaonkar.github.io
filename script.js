@@ -43,7 +43,7 @@ $(window).scroll(() => {
 $(window).on('load', function () {
 setTimeout(function () {
     $('.load-wrapper').fadeToggle('hidden');
-}, 1300)
+}, 5000)
 });
 
 $('#about').on('click', function () {
@@ -177,6 +177,16 @@ $('#sayhellobutton').click(() => {
     $('#messageinput').val('Hello .');
     
 })
+
+
+// loading animation from after effects
+var svgContainer = document.getElementById('svgContainer');
+var animItem = bodymovin.loadAnimation({
+  wrapper: svgContainer,
+  animType: 'svg',
+  loop: true,
+  path: 'data.json'
+});
 
 
 

@@ -38,6 +38,12 @@ body{
     transition: transform 0.5s ease-out;
 } */
 
+#svgContainer {
+    width: 17%;
+    height: 17%;
+    mix-blend-mode: lighten;
+  }
+
 .aboutfade.photo{
     animation-timing-function: cubic-bezier(.43, .1, .19, .91);
     animation-delay:0.3s;    
@@ -116,7 +122,7 @@ div .aboutfade.info{
     transform: translate(-100px,0);
 }
 
-.load-wrapper {
+/* .load-wrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -127,7 +133,7 @@ div .aboutfade.info{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .ok {
     height: 70px;
