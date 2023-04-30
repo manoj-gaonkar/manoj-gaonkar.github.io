@@ -163,8 +163,8 @@ var timeout;
 window.addEventListener('mousemove', (e) => {
     $('#purpleball').fadeIn();
     $('#purpleball').css('transform', 'translate(' + e.clientX + 'px,' + e.clientY + 'px)');
-    $('#purpleballinner').css('transform','scale(2)');
-    $('#purpleballinner').css('transform','scale(2)');
+    $('#purpleballinner').css('transform','scale(1.8)');
+    $('#purpleballinner').css('transform','scale(1.8)');
     clearTimeout(timeout);
     timeout = setTimeout(()=>{
         $('#purpleballinner').css('transform','scale(1)');

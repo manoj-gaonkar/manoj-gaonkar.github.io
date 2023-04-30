@@ -27,8 +27,8 @@ body{
 }
 
 #purpleballinner{
-    width: 10rem;
-    height: 10rem;
+    width: 1rem;
+    height: 1rem;
     transform: scale(1);
     transition: ease-in-out all 0.7s ;
 }
