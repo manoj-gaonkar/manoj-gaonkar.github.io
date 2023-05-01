@@ -15,13 +15,11 @@
 </head>
 
 <body class=" relative overflow-x-hidden bodycontainer transition-all ease-out duration-1000" id="scrtop">
-    <div class="flex flex-col load-wrapper w-screen h-screen fixed inset-0 flex justify-center items-center   bg-[#090a0d] z-[300] ">
+    <div class="flex flex-col load-wrapper w-screen h-screen fixed inset-0 hidden justify-center items-center   bg-[#090a0d] z-[300] ">
     <div class="" id="svgContainer">
         <!-- <div class="ok "></div>  -->
     </div>
-    <div id="loader" class="w-3/4 h-2 bg-gray-300 rounded-full">
-        <div id="progress" class="h-full bg-blue-500 rounded-full"></div>
-      </div>
+ 
     </div>
     <!-- loading wrapper -->
     <!-- main container has everything beginning -->
@@ -232,9 +230,10 @@
                 <div class="slidecontainer mx-10 md:mx-20 lg:mx-52 overflow-x-hidden relative scroll-smooth ">
                     
                     <!-- project list starts here -->
-                    <div class="wrapper grid grid-cols-2 md:grid-cols-6 w-[200%] overflow-hidden grid-rows-2  mt-10 gap-2 md:gap-2 transition-all ease-in-out duration-700  ">
-                            <div
-                                class=" firstimage w-full h-full md:min-h-48 lg:min-h-64  bg-red-900 overflow-hidden rounded-md group relative object-cover shadow-md ">
+                    <div class="wrapper grid grid-cols-2 md:grid-cols-2 w-[200%] overflow-hidden   mt-10 gap-2 md:gap-2 transition-all ease-in-out duration-700  ">
+                        <!-- first grid inside the main grid -->
+                        <div class="grid grid-cols-3 w-full gap-2 ">
+                            <div class=" firstimage w-full h-full md:min-h-48 lg:min-h-64  bg-red-900 overflow-hidden rounded-md group relative object-cover shadow-md ">
                                 <img src="./assets/projects/google-clone.png" alt=""
                                     class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out object-cover w-full h-full">
                                 <div
@@ -348,119 +347,91 @@
                             </div>
 
 
-                            <div
-                            class="w-full h-full md:min-h-48 lg:min-h-64  bg-red-900 overflow-hidden rounded-md group relative object-cover shadow-md ">
-                            <img src="./assets/projects/google-clone.png" alt=""
-                                class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out object-cover w-full h-full">
-                            <div
-                                class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100  text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
-                                <div
-                                    class=" text-white  text-[10px] md:text-lg opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
-                                    Google Clone(Django)
-                                </div>
-                                <a href="https://google-clone-dj.herokuapp.com/" target="_blank">
-                                    <span class="material-symbols-outlined text-white  animate-bounce py-4">
-                                        link
-                                    </span>
-                                </a>
-
-                            </div>
+        
                         </div>
-
-
-
-                        <div class="w-full h-full md:min-h-48 lg:min-h-64  overflow-hidden rounded-md group relative shadow-md">
-                            <img src="./assets/projects/imagegallery.png" alt=""
-                                class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full object-cover w-full">
-                            <div
-                                class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
+                        
+                        <!-- second grid inside main grid -->
+                        <div class="grid grid-cols-3 grid-rows-2 grid-flow-col gap-2 ">
+                            <div class="w-full h-full md:min-h-48 lg:min-h-64  bg-red-900 overflow-hidden rounded-md group relative object-cover shadow-md ">
+                                <img src="./assets/projects/blogapp.png" alt=""
+                                    class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out object-cover w-full h-full">
                                 <div
-                                    class=" text-white text-[10px] md:text-lg opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300 ">
-                                    Image Gallery(Django)
+                                    class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100  text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
+                                    <div
+                                        class=" text-white  text-[10px] md:text-lg opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
+                                        Blog App
+                                    </div>
+                                    <a href="https://github.com/manoj-gaonkar/django-blogapp.git" target="_blank">
+                                        <span class="material-symbols-outlined text-white  animate-bounce py-4">
+                                            link
+                                        </span>
+                                    </a>
+    
                                 </div>
-                                <a href="https://github.com/manoj-gaonkar/DynamicImageGallery" target="_blank">
-                                    <span class="material-symbols-outlined text-white  animate-bounce py-4">
-                                        link
-                                    </span>
-                                </a>
-
                             </div>
-                        </div>
-
-
-
-                        <div class="w-full h-full md:min-h-48 lg:min-h-64 overflow-hidden rounded-md group relative shadow-md">
-                            <img src="./assets/projects/todolist.png" alt=""
-                                class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full object-cover w-full">
-                            <div
-                                class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
+    
+    
+    
+                            <div class="w-full h-full md:min-h-48 lg:min-h-64  overflow-hidden rounded-md group relative shadow-md">
+                                <img src="./assets/projects/SocialMediaForPrivateInstitution.png" alt=""
+                                    class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full object-cover w-full">
                                 <div
-                                    class=" text-white text-[10px] md:text-lg opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
-                                    Todo List(Django)
+                                    class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
+                                    <div
+                                        class=" text-white text-[10px] md:text-lg opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300 ">
+                                        Social Media(private Institution)
+                                    </div>
+                                    <a href="https://github.com/manoj-gaonkar/SocialMediaForPrivateInstitution.git" target="_blank">
+                                        <span class="material-symbols-outlined text-white  animate-bounce py-4">
+                                            link
+                                        </span>
+                                    </a>
+    
                                 </div>
-                                <a href="https://github.com/manoj-gaonkar/ToDo-List" target="_blank">
-                                    <span class="material-symbols-outlined text-white  animate-bounce py-4">
-                                        link
-                                    </span>
-                                </a>
-
                             </div>
-                        </div>
-
-                        <div class="w-full h-full md:min-h-48 lg:min-h-64  overflow-hidden rounded-md group relative shadow-md">
-                            <img src="./assets/projects/rps.png" alt=""
-                                class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full object-cover w-full">
-                            <div
-                                class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
+    
+    
+    
+                            <div class="lastimage w-full h-full md:min-h-48 lg:min-h-64 overflow-hidden rounded-md group relative shadow-md">
+                                <img src="./assets/projects/urlShortener.png" alt=""
+                                    class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full object-cover w-full">
                                 <div
-                                    class=" text-white text-[10px] md:text-lg opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
-                                    rps(js)
+                                    class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
+                                    <div
+                                        class=" text-white text-[10px] md:text-lg opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
+                                        URL Shortener
+                                    </div>
+                                    <a href="https://github.com/manoj-gaonkar/url-shortener.git" target="_blank">
+                                        <span class="material-symbols-outlined text-white  animate-bounce py-4">
+                                            link
+                                        </span>
+                                    </a>
+    
                                 </div>
-                                <a href="https://manoj-gaonkar.github.io/r-p-s/" target="_blank">
-                                    <span class="material-symbols-outlined text-white  animate-bounce py-4">
-                                        link
-                                    </span>
-                                </a>
-
                             </div>
-                        </div>
 
-
-                        <div class="w-full h-full md:min-h-48 lg:min-h-64  overflow-hidden rounded-md group relative shadow-md">
-                            <img src="./assets/projects/weatherapp.png" alt=""
-                                class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full  object-cover w-full origin-top ">
-                            <div
-                                class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
+                            <div class="lastimage w-full h-full md:min-h-48 lg:min-h-64 overflow-hidden rounded-md group relative shadow-md">
+                                <img src="./assets/projects/stockPricePrediction.png" alt=""
+                                    class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full object-cover w-full">
                                 <div
-                                    class=" text-white text-[10px] md:text-lg opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
-                                    Weatherapp(Django)
+                                    class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
+                                    <div
+                                        class=" text-white text-[10px] md:text-lg opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
+                                        Stock Prediction
+                                    </div>
+                                    <a href="https://github.com/manoj-gaonkar/Stockprice-prediction-using-twitter-sentiment-analysis.git" target="_blank">
+                                        <span class="material-symbols-outlined text-white  animate-bounce py-4">
+                                            link
+                                        </span>
+                                    </a>
+    
                                 </div>
-                                <a href="https://github.com/manoj-gaonkar/weather-app" target="_blank">
-                                    <span class="material-symbols-outlined text-white  animate-bounce py-4">
-                                        link
-                                    </span>
-                                </a>
-
                             </div>
+    
                         </div>
+                    
 
-                        <div class="w-full h-full md:min-h-48 lg:min-h-64  overflow-hidden rounded-md group relative shadow-md">
-                            <img src="./assets/projects/foodie.png" alt="#"
-                                class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full w-full object-cover">
-                            <div
-                                class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
-                                <div
-                                    class=" text-white text-[10px] md:text-lg opacity-0 group-hover:opacity-100 scale-[1.3]  group-hover:scale-[1] transition-all ease-out duration-300">
-                                    Foodie(Tailwindcss)
-                                </div>
-                                <a href="https://manoj-gaonkar.github.io/food-recipe/" target="_blank">
-                                    <span class="material-symbols-outlined text-white  animate-bounce py-4">
-                                        link
-                                    </span>
-                                </a>
 
-                            </div>
-                        </div>
                     </div>
                 </div>
 

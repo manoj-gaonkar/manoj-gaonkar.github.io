@@ -12,30 +12,6 @@ var closeabout = document.getElementById('closeabout');
 // load animation
 
 // load animation end
-// window.addEventListener('load', function () {
-//     const loader = document.getElementById('loader');
-//     const progress = document.getElementById('progress');
-//     let width = 0;
-//     const interval = setInterval(function () {
-//       if (width >= 100) {
-//         clearInterval(interval);
-//       } else {
-//         width += 1;
-//         progress.style.width = width + '%';
-//       }
-//     }, 10);
-//     setTimeout(function () {
-//       loader.style.display = 'none';
-//     }, 1000);
-//   });
-
-  window.addEventListener('progress', function (event) {
-    if (event.lengthComputable) {
-      const percentComplete = (event.loaded / event.total) * 100;
-      document.getElementById('progress').style.width = percentComplete + '%';
-      console.log(percentComplete);
-    }
-  });
 
 // navanimation scroll
 var lastScroll = 0;
@@ -64,11 +40,11 @@ $(window).scroll(() => {
     lastScroll = currentScroll;
 })
 
-$(window).on('load', function () {
-setTimeout(function () {
-    $('.load-wrapper').fadeToggle('hidden');
-}, 5000)
-});
+// $(window).on('load', function () {
+// setTimeout(function () {
+//     $('.load-wrapper').fadeToggle('hidden');
+// }, 5000)
+// });
 
 $('#about').on('click', function () {
     $('#showabout').fadeToggle('hidden');
@@ -226,9 +202,11 @@ const sliders = document.querySelectorAll('.lrslider');
 const slideContainer = document.querySelector('.slidecontainer');
 const slideContainerr = document.querySelector('.wrapper');
 const firstImage = document.querySelector('.firstimage');
+const lastImage = document.querySelector('.lastimage');
 
 
 firstImageWidth = firstImage.clientWidth+8;
+lastImageWidth = lastImage.clientWidth;
 
 
 sliders[0].addEventListener('click',(e)=>{
@@ -247,7 +225,7 @@ sliders[1].addEventListener("click",()=>{
     setTimeout(()=>{
         sliders[1].classList.toggle('pointer-events-none');
     },700)
-    sliders[1].style.display = Math.ceil(slideContainerr.getBoundingClientRect().right-firstImageWidth)<Math.ceil(slideContainer.getBoundingClientRect().right) ? "none" : 'flex';
+    sliders[1].style.display = Math.ceil(lastImage.getBoundingClientRect().right-firstImageWidth)<Math.ceil(slideContainer.getBoundingClientRect().right) ? "none" : 'flex';
     sliders[0].style.display = 'flex';
 
 })
@@ -257,7 +235,7 @@ sliders[0].addEventListener('click',()=>{
     setTimeout(()=>{
         sliders[0].classList.toggle('pointer-events-none');
     },700)
-    sliders[0].style.display = Math.ceil(slideContainerr.getBoundingClientRect().left)+firstImageWidth == Math.ceil(slideContainer.getBoundingClientRect().left) ? "none" : 'flex';
+    sliders[0].style.display = Math.ceil(firstImage.getBoundingClientRect().left)+firstImageWidth == Math.ceil(slideContainer.getBoundingClientRect().left) ? "none" : 'flex';
     sliders[1].style.display = 'flex';
 })
 
