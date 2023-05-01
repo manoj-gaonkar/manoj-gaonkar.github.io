@@ -222,7 +222,7 @@ sliders[1].addEventListener("click",()=>{
     sliders[1].classList.toggle('pointer-events-none');
     setTimeout(()=>{
         sliders[1].classList.toggle('pointer-events-none');
-    },1000)
+    },700)
     sliders[1].style.display = Math.ceil(slideContainerr.getBoundingClientRect().right-firstImageWidth)<Math.ceil(slideContainer.getBoundingClientRect().right) ? "none" : 'flex';
     sliders[0].style.display = 'flex';
 
@@ -232,7 +232,7 @@ sliders[0].addEventListener('click',()=>{
     sliders[0].classList.toggle('pointer-events-none');
     setTimeout(()=>{
         sliders[0].classList.toggle('pointer-events-none');
-    },1000)
+    },700)
     sliders[0].style.display = Math.ceil(slideContainerr.getBoundingClientRect().left)+firstImageWidth == Math.ceil(slideContainer.getBoundingClientRect().left) ? "none" : 'flex';
     sliders[1].style.display = 'flex';
 })
