@@ -209,11 +209,13 @@ firstImageWidth = firstImage.clientWidth+8;
 
 
 sliders[0].addEventListener('click',(e)=>{
-    slideContainer.scrollLeft -= firstImageWidth;
+    // slideContainer.scrollLeft -= firstImageWidth;
+    slideContainerr.style.transform += `translateX(${firstImageWidth}px)`;
 })
 
 sliders[1].addEventListener('click',(e)=>{
     // slideContainer.scrollLeft += firstImageWidth;
+    
     slideContainerr.style.transform += `translateX(-${firstImageWidth}px)`;
 })
 
@@ -222,8 +224,19 @@ sliders[1].addEventListener('click',(e)=>{
 sliders.forEach((slider) => {
     slider.addEventListener("mouseup",()=>{
         console.log("fff");
-        console.log(Math.ceil(slideContainerr.getBoundingClientRect().right),"\n",Math.ceil(slideContainer.getBoundingClientRect().right));
+        console.log(Math.ceil(slideContainerr.getBoundingClientRect().left)+firstImageWidth,"\n",Math.ceil(slideContainer.getBoundingClientRect().left));
+        if(Math.ceil(slideContainerr.getBoundingClientRect().right-firstImageWidth)<Math.ceil(slideContainer.getBoundingClientRect().right)){
+            sliders[1].style.display = "none";
+        }
+        else{
+            sliders[1].style.display = "flex";
+        }
+
     })
+})
+
+sliders[0].addEventListener('click',()=>{
+    sliders[0].style.display = Math.ceil(slideContainerr.getBoundingClientRect().left)+firstImageWidth == Math.ceil(slideContainer.getBoundingClientRect().left) ? "none" : 'flex';
 })
 
 
