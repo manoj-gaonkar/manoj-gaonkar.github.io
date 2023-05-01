@@ -12,6 +12,30 @@ var closeabout = document.getElementById('closeabout');
 // load animation
 
 // load animation end
+// window.addEventListener('load', function () {
+//     const loader = document.getElementById('loader');
+//     const progress = document.getElementById('progress');
+//     let width = 0;
+//     const interval = setInterval(function () {
+//       if (width >= 100) {
+//         clearInterval(interval);
+//       } else {
+//         width += 1;
+//         progress.style.width = width + '%';
+//       }
+//     }, 10);
+//     setTimeout(function () {
+//       loader.style.display = 'none';
+//     }, 1000);
+//   });
+
+  window.addEventListener('progress', function (event) {
+    if (event.lengthComputable) {
+      const percentComplete = (event.loaded / event.total) * 100;
+      document.getElementById('progress').style.width = percentComplete + '%';
+      console.log(percentComplete);
+    }
+  });
 
 // navanimation scroll
 var lastScroll = 0;
