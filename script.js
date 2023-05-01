@@ -203,40 +203,38 @@ const slideContainer = document.querySelector('.slidecontainer');
 const slideContainerr = document.querySelector('.wrapper');
 const firstImage = document.querySelector('.firstimage');
 
-// sliders[0].style.display = "none";
 
 firstImageWidth = firstImage.clientWidth+8;
 
 
 sliders[0].addEventListener('click',(e)=>{
-    // slideContainer.scrollLeft -= firstImageWidth;
     slideContainerr.style.transform += `translateX(${firstImageWidth}px)`;
 })
 
 sliders[1].addEventListener('click',(e)=>{
-    // slideContainer.scrollLeft += firstImageWidth;
-    
     slideContainerr.style.transform += `translateX(-${firstImageWidth}px)`;
 })
 
+// initially keeping the left button of slideer hidden
+sliders[0].style.display = "none";
 
+sliders[1].addEventListener("click",()=>{
+    sliders[1].classList.toggle('pointer-events-none');
+    setTimeout(()=>{
+        sliders[1].classList.toggle('pointer-events-none');
+    },1000)
+    sliders[1].style.display = Math.ceil(slideContainerr.getBoundingClientRect().right-firstImageWidth)<Math.ceil(slideContainer.getBoundingClientRect().right) ? "none" : 'flex';
+    sliders[0].style.display = 'flex';
 
-sliders.forEach((slider) => {
-    slider.addEventListener("mouseup",()=>{
-        console.log("fff");
-        console.log(Math.ceil(slideContainerr.getBoundingClientRect().left)+firstImageWidth,"\n",Math.ceil(slideContainer.getBoundingClientRect().left));
-        if(Math.ceil(slideContainerr.getBoundingClientRect().right-firstImageWidth)<Math.ceil(slideContainer.getBoundingClientRect().right)){
-            sliders[1].style.display = "none";
-        }
-        else{
-            sliders[1].style.display = "flex";
-        }
-
-    })
 })
 
 sliders[0].addEventListener('click',()=>{
+    sliders[0].classList.toggle('pointer-events-none');
+    setTimeout(()=>{
+        sliders[0].classList.toggle('pointer-events-none');
+    },1000)
     sliders[0].style.display = Math.ceil(slideContainerr.getBoundingClientRect().left)+firstImageWidth == Math.ceil(slideContainer.getBoundingClientRect().left) ? "none" : 'flex';
+    sliders[1].style.display = 'flex';
 })
 
 
