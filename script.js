@@ -40,11 +40,11 @@ $(window).scroll(() => {
     lastScroll = currentScroll;
 })
 
-$(window).on('load', function () {
-setTimeout(function () {
-    $('.load-wrapper').fadeToggle('hidden');
-}, 5000)
-});
+// $(window).on('load', function () {
+// setTimeout(function () {
+//     $('.load-wrapper').fadeToggle('hidden');
+// }, 5000)
+// });
 
 $('#about').on('click', function () {
     $('#showabout').fadeToggle('hidden');
@@ -196,6 +196,35 @@ var animItem = bodymovin.loadAnimation({
   path: 'data.json'
 });
 
+
+// project slider left right
+const sliders = document.querySelectorAll('.lrslider');
+const slideContainer = document.querySelector('.slidecontainer');
+const slideContainerr = document.querySelector('.wrapper');
+const firstImage = document.querySelector('.firstimage');
+
+// sliders[0].style.display = "none";
+
+firstImageWidth = firstImage.clientWidth+8;
+
+
+sliders[0].addEventListener('click',(e)=>{
+    slideContainer.scrollLeft -= firstImageWidth;
+})
+
+sliders[1].addEventListener('click',(e)=>{
+    // slideContainer.scrollLeft += firstImageWidth;
+    slideContainerr.style.transform += `translateX(-${firstImageWidth}px)`;
+})
+
+
+
+sliders.forEach((slider) => {
+    slider.addEventListener("mouseup",()=>{
+        console.log("fff");
+        console.log(Math.ceil(slideContainerr.getBoundingClientRect().right),"\n",Math.ceil(slideContainer.getBoundingClientRect().right));
+    })
+})
 
 
 // w = $(window);
