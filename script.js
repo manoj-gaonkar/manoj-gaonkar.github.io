@@ -40,11 +40,11 @@ $(window).scroll(() => {
     lastScroll = currentScroll;
 })
 
-// $(window).on('load', function () {
-// setTimeout(function () {
-//     $('.load-wrapper').fadeToggle('hidden');
-// }, 5000)
-// });
+$(window).on('load', function () {
+setTimeout(function () {
+    $('.load-wrapper').fadeToggle('hidden');
+}, 5000)
+});
 
 $('#about').on('click', function () {
     $('#showabout').fadeToggle('hidden');
