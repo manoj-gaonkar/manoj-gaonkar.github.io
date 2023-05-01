@@ -39,8 +39,8 @@ body{
 } */
 
 #svgContainer {
-    width: 17%;
-    height: 17%;
+    width: 8%;
+    height: 8%;
     mix-blend-mode: lighten;
   }
 
