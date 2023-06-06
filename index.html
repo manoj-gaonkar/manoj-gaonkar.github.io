@@ -15,12 +15,11 @@
 </head>
 
 <body class=" relative overflow-x-hidden bodycontainer transition-all ease-out duration-1000" id="scrtop">
-    <div class="flex flex-col load-wrapper w-screen h-screen fixed inset-0  justify-center items-center   bg-[#090a0d] z-[300] ">
-    <div class="" id="svgContainer">
-        <!-- <div class="ok "></div>  -->
-    </div>
- 
-    </div>
+    <!-- <div class="flex flex-col load-wrapper w-screen h-screen fixed inset-0  justify-center items-center   bg-[#090a0d] z-[300] ">
+        <div class="" id="svgContainer">
+            <div class="ok "></div> 
+        </div>
+    </div> -->
     <!-- loading wrapper -->
     <!-- main container has everything beginning -->
     <!-- manoj -->
@@ -230,9 +229,9 @@
                 <div class="slidecontainer mx-10 md:mx-20 lg:mx-52 overflow-x-hidden relative scroll-smooth ">
                     
                     <!-- project list starts here -->
-                    <div class="wrapper grid grid-cols-2 md:grid-cols-2 w-[200%] overflow-hidden   mt-10 gap-2 md:gap-2 transition-all ease-in-out duration-700  ">
+                    <div class="wrapper grid grid-cols-1 md:grid-cols-2 w-[100%] md:w-[200%] overflow-hidden   mt-10 gap-2 md:gap-2 transition-all ease-in-out duration-700  ">
                         <!-- first grid inside the main grid -->
-                        <div class="grid grid-cols-3 w-full gap-2 ">
+                        <div class="grid grid-cols-1 md:grid-cols-3 w-full gap-2 ">
                             <div class=" firstimage w-full h-full md:min-h-48 lg:min-h-64  bg-red-900 overflow-hidden rounded-md group relative object-cover shadow-md ">
                                 <img src="./assets/projects/google-clone.png" alt=""
                                     class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out object-cover w-full h-full">
@@ -351,8 +350,8 @@
                         </div>
                         
                         <!-- second grid inside main grid -->
-                        <div class="grid grid-cols-3 grid-rows-2 grid-flow-col gap-2 ">
-                            <div class="w-full h-full md:min-h-48 lg:min-h-64  bg-red-900 overflow-hidden rounded-md group relative object-cover shadow-md ">
+                        <div class=" grid md:grid grid-cols-1 md:grid-cols-3  grid-rows-2 grid-flow-row md:grid-flow-col gap-2 ">
+                            <div class="w-full h-fit md:min-h-48 lg:min-h-64   overflow-hidden rounded-md group relative object-cover shadow-md ">
                                 <img src="./assets/projects/blogapp.png" alt=""
                                     class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out object-cover w-full h-full">
                                 <div
@@ -691,7 +690,7 @@
     <div class="fixed left-0 md:left-1/4 top-2/4 -z-0 animate-redballanimation " id="redball">
         <div class="w-64 h-64 rounded-full bg-[rgba(255,63,191,1)] blur-[100px] bg-blend-color-dodge opacity-50"></div>
     </div>
-    <div class=" fixed -left-1 -top-1 -z-0 origin-center hidden md:hidden transition-all blur-[0] duration-1000 ease-out "
+    <div class=" fixed -left-1 -top-1 -z-0 origin-center hidden md:block md:invisible visible transition-all blur-[0] duration-1000 ease-out "
         id="purpleball">
         <div class="  rounded-full bg-purple-400  bg-blend-overlay mix-blend-difference opacity-90 "
             id="purpleballinner"></div>

@@ -14,6 +14,7 @@ var closeabout = document.getElementById('closeabout');
 // load animation end
 
 // navanimation scroll
+
 var lastScroll = 0;
 
 $(window).scroll(() => {
@@ -169,7 +170,8 @@ $('#top-button').click(function () {
 
 var timeout;
 window.addEventListener('mousemove', (e) => {
-    $('#purpleball').fadeIn();
+    $('#purpleball').addClass('md:visible');
+    $('#purpleball').removeClass('md:invisible');
     $('#purpleball').css('transform', 'translate(' + e.clientX + 'px,' + e.clientY + 'px)');
     $('#purpleballinner').css('transform','scale(1.8)');
     $('#purpleballinner').css('transform','scale(1.8)');
