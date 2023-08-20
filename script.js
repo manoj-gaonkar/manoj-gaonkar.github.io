@@ -241,6 +241,28 @@ sliders[0].addEventListener('click',()=>{
     sliders[1].style.display = 'flex';
 })
 
+// scroll animation on projects i think
+var projectItems = document.querySelectorAll(".project");
+console.log(projectItems)
+window.addEventListener('scroll',()=>{
+    var winHeight = window.innerHeight/5*4;
+    projectItems.forEach(box => {
+        // console.log(box.getBoundingClientRect().top,winHeight)
+        if(box.getBoundingClientRect().top < winHeight){
+            box.classList.remove("translate-y-10"); 
+            box.classList.add("translate-y-0"); 
+            box.classList.remove("opacity-0"); 
+            box.classList.add("opacity-100"); 
+        }else{
+            box.classList.remove("translate-y-0"); 
+            box.classList.add("translate-y-10"); 
+            box.classList.remove("opacity-100"); 
+            box.classList.add("opacity-0");
+        }
+    })
+
+})
+
 
 // w = $(window);
 // b = $('body');
