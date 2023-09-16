@@ -263,6 +263,32 @@ window.addEventListener('scroll',()=>{
 
 })
 
+const manoj1 = document.querySelectorAll(".manoj1>*");
+const manoj2 = document.querySelectorAll(".manoj2>*");
+console.log(manoj1)
+
+
+let changeText1 = ()=>{
+manoj1.forEach((a)=>{
+    a.classList.add("scale-y-0");
+})
+manoj2.forEach((b)=>{
+    b.classList.add("scale-y-100");
+})
+setTimeout(changeText2,2000);
+}
+
+let changeText2 = ()=>{
+manoj1.forEach((c)=>{
+    c.classList.remove("scale-y-0");
+})
+manoj2.forEach((d)=>{
+    d.classList.remove("scale-y-100");
+    // d.classList.add("scale-y-0");
+})
+}
+
+const textRollInterval = setInterval(changeText1,3000);
 
 // w = $(window);
 // b = $('body');
