@@ -243,7 +243,6 @@ sliders[0].addEventListener('click',()=>{
 
 // scroll animation on projects i think
 var projectItems = document.querySelectorAll(".project");
-console.log(projectItems)
 window.addEventListener('scroll',()=>{
     var winHeight = window.innerHeight/5*4;
     projectItems.forEach(box => {
@@ -265,7 +264,6 @@ window.addEventListener('scroll',()=>{
 
 const manoj1 = document.querySelectorAll(".manoj1>*");
 const manoj2 = document.querySelectorAll(".manoj2>*");
-console.log(manoj1)
 
 
 let changeText1 = ()=>{
