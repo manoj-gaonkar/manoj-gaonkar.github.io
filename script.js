@@ -288,6 +288,25 @@ manoj2.forEach((d)=>{
 
 const textRollInterval = setInterval(changeText1,3000);
 
+//  animate purple ball when clicked
+
+window.addEventListener('mousedown',(e)=>{
+    console.log("clicked dude");
+    console.log(e.clientX,e.clientY);
+
+    $('#purpleballinner').css("transition",'ease-in-out all 0.7s,opacity 0.5s ease-out,scale 0s ease-out');
+    $('#purpleballinner').css("transform",'scale(10)');
+    $('#purpleballinner').css("opacity",'0');
+
+    const scaletimeout = setTimeout(resizecircle,1000);
+})
+
+const resizecircle = () => {
+    $('#purpleballinner').css("transition",'ease-in-out all 0.7s,opacity 0.5s ease-out,transform 0s ease-in');
+    $('#purpleballinner').css("transform",'scale(1)');
+    $('#purpleballinner').css("opacity",'1');
+    $('#purpleballinner').css("transition",'ease-in-out all 0.7s');
+}
 // w = $(window);
 // b = $('body');
 // c = $('.bodycontainer');

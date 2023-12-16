@@ -30,7 +30,7 @@ body{
     width: 1rem;
     height: 1rem;
     transform: scale(1);
-    transition: ease-in-out all 0.7s ;
+    transition: ease-in-out all 0.7s;
 }
 /* .bodycontainer {
     transform: translate3d(0, 0, 0);
