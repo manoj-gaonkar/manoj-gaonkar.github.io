@@ -170,6 +170,7 @@ $('#top-button').click(function () {
 
 var timeout;
 window.addEventListener('mousemove', (e) => {
+    $('#purpleballinner').css("transition",'ease-in-out all 0.7s');
     $('#purpleball').addClass('md:visible');
     $('#purpleball').removeClass('md:invisible');
     $('#purpleball').css('transform', 'translate(' + e.clientX + 'px,' + e.clientY + 'px)');
@@ -305,7 +306,7 @@ const resizecircle = () => {
     $('#purpleballinner').css("transition",'ease-in-out all 0.7s,opacity 0.5s ease-out,transform 0s ease-in');
     $('#purpleballinner').css("transform",'scale(1)');
     $('#purpleballinner').css("opacity",'1');
-    $('#purpleballinner').css("transition",'ease-in-out all 0.7s');
+    clearTimeout(scaletimeout);
 }
 // w = $(window);
 // b = $('body');
