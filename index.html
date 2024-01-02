@@ -370,9 +370,9 @@
                         
                         <!-- second grid inside main grid -->
                         <div class=" grid md:grid grid-cols-1 md:grid-cols-3  grid-rows-2 grid-flow-row md:grid-flow-col gap-2 ">
-                            <div class="w-full h-fit md:min-h-48 lg:min-h-64   overflow-hidden rounded-md group relative object-cover shadow-md ">
+                            <div class="w-full h-full md:min-h-48 lg:min-h-64   overflow-hidden rounded-md group relative object-cover shadow-md ">
                                 <img src="./assets/projects/blogapp.png" alt=""
-                                    class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out object-cover w-full h-full">
+                                    class="relative z-10 scale-100 group-hover:scale-110 transition-all duration-500 ease-out h-full object-cover w-full">
                                 <div
                                     class="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100  text-black bg-[rgba(0,0,0,0.8)] h-full w-full flex flex-col justify-center items-center absolute left-0 top-0  z-50 ">
                                     <div
@@ -538,21 +538,21 @@
                         <label class="block text-white">Name:</label>
                         <input type="text"
                             class=" w-full outline-none bg-transparent border-b text-white peer p-3 placeholder:opacity-40"
-                            name="Name" placeholder="name" required>
+                            name="Name" placeholder="name" required autocomplete="off" >
                         <hr class="w-0 peer-focus:w-full transition-all ease-out duration-500 ">
                     </div>
                     <div class=" mt-6  transition-all duration-500 ease-in-out">
                         <label class="block text-white">Email:</label>
                         <input type="email"
                             class=" w-full outline-none bg-transparent border-b text-white peer p-3 placeholder:opacity-40"
-                            name="Email" placeholder="email" required>
+                            name="Email" placeholder="email" required autocomplete="off">
                         <hr class="w-0 peer-focus:w-full transition-all ease-out duration-500 ">
                     </div>
                     <div class=" mt-6 transition-all duration-500 ease-in-out">
                         <label class="block text-white">Message:</label>
                         <input type="text"
                             class="h-fit  w-full outline-none bg-transparent border-b text-white peer p-3 placeholder:opacity-40"
-                            name="Message" placeholder="message" id="messageinput" value="" required>
+                            name="Message" placeholder="message" id="messageinput" value="" required autocomplete="off">
                         <hr class="w-0 peer-focus:w-full transition-all ease-out duration-500 ">
                     </div>
                     <div class="  transition-all duration-500 ease-in-out">
